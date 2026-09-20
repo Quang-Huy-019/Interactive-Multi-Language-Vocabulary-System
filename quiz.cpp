@@ -487,8 +487,8 @@ void QuizSession::displayCurrentQuestion()
 
 
     // ================================================
-    // SUBMIT BUTTON
-    // ONLY SHOW ON LAST QUESTION AFTER ANSWERING
+    // SHOW SUBMIT BUTTON ONLY ON LAST QUESTION
+    // AFTER ANSWERING
     // ================================================
 
     if (currentQuestion ==
@@ -569,7 +569,15 @@ void QuizSession::runQuiz()
     while (true)
     {
         // ====================================================
-        // DISPLAY QUESTION
+        // CLEAR TERMINAL
+        // MỖI LẦN REDRAW CHỈ CLEAR 1 LẦN
+        // ====================================================
+
+        clearTerminal();
+
+
+        // ====================================================
+        // DISPLAY CURRENT QUESTION
         // ====================================================
 
         displayCurrentQuestion();
@@ -591,29 +599,31 @@ void QuizSession::runQuiz()
             int arrow = _getch();
 
 
+            // =================================================
             // LEFT
+            // =================================================
+
             if (arrow == 75)
             {
                 if (currentQuestion > 0)
                 {
                     currentQuestion--;
-
-                    clearTerminal();
                 }
 
                 continue;
             }
 
 
+            // =================================================
             // RIGHT
+            // =================================================
+
             if (arrow == 77)
             {
                 if (currentQuestion <
                     (int)questions.size() - 1)
                 {
                     currentQuestion++;
-
-                    clearTerminal();
                 }
 
                 continue;
@@ -633,7 +643,10 @@ void QuizSession::runQuiz()
 
         if (key >= 'A' && key <= 'D')
         {
-            // Save answer
+            // =================================================
+            // SAVE ANSWER
+            // =================================================
+
             history[currentQuestion].userAnswer =
                 key;
 
@@ -648,31 +661,30 @@ void QuizSession::runQuiz()
                 );
 
 
-            // ================================================
+            // =================================================
             // NOT LAST QUESTION
-            // ================================================
+            // =================================================
 
             if (currentQuestion <
                 (int)questions.size() - 1)
             {
                 currentQuestion++;
 
-                clearTerminal();
-
                 continue;
             }
 
 
-            // ================================================
+            // =================================================
             // LAST QUESTION
-            // ================================================
+            // =================================================
 
-            // Chỉ xóa màn hình.
-            // Không tự in câu hỏi ở đây.
-            // Vòng while phía trên sẽ gọi
-            // displayCurrentQuestion() đúng 1 lần.
-
-            clearTerminal();
+            // Không clear ở đây.
+            // Vòng while tiếp theo sẽ tự:
+            //
+            // 1. clearTerminal()
+            // 2. displayCurrentQuestion()
+            //
+            // nên câu cuối chỉ xuất hiện 1 lần.
 
             continue;
         }
@@ -684,12 +696,16 @@ void QuizSession::runQuiz()
 
         if (key == 13)
         {
+            // =================================================
             // ENTER ONLY AT LAST QUESTION
+            // =================================================
+
             if (currentQuestion ==
                 (int)questions.size() - 1)
             {
                 // ============================================
-                // CASE 1: ALL ANSWERED
+                // CASE 1:
+                // ALL QUESTIONS ANSWERED
                 // ============================================
 
                 if (allQuestionsAnswered())
@@ -713,7 +729,8 @@ void QuizSession::runQuiz()
 
 
                 // ============================================
-                // CASE 2: UNANSWERED QUESTIONS
+                // CASE 2:
+                // HAVE UNANSWERED QUESTIONS
                 // ============================================
 
                 clearTerminal();
@@ -781,8 +798,6 @@ void QuizSession::runQuiz()
 
                 if (confirm == '2')
                 {
-                    clearTerminal();
-
                     continue;
                 }
             }
