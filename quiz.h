@@ -5,93 +5,112 @@
 #include <vector>
 
 
-using namespace std;
-
-
-// =========================
+// ============================================================
 // CLASS WORD
-// =========================
+// ============================================================
 
-class Word {
-
+class Word
+{
 private:
-    string english;
-    string vietnamese;
+
+    std::string english;
+    std::string vietnamese;
+
 
 public:
-    Word();
-    Word(string en, string vi);
 
-    string getEnglish() const;
-    string getVietnamese() const;
+    Word();
+
+    Word(
+        std::string en,
+        std::string vi
+    );
+
+
+    std::string getEnglish() const;
+
+    std::string getVietnamese() const;
 };
 
 
-// =========================
+// ============================================================
 // CLASS QUESTION
-// =========================
+// ============================================================
 
-class Question {
-
+class Question
+{
 private:
+
     Word word;
-    vector<string> options;
+
+    std::vector<std::string> options;
+
     int correctAnswer;
 
+
 public:
+
     Question(
         Word w,
-        vector<string> opts,
+        std::vector<std::string> opts,
         int correct
     );
+
 
     void showQuestion(
         int number,
         int total
     ) const;
 
+
     bool checkAnswer(
         char answer
     ) const;
 
-    string getCorrectAnswer() const;
 
-    string getWord() const;
+    std::string getCorrectAnswer() const;
+
+    std::string getWord() const;
+
+    std::string getOption(
+        int index
+    ) const;
 };
 
 
-// =========================
-// STRUCT LƯU LỊCH SỬ QUIZ
-// =========================
+// ============================================================
+// QUIZ HISTORY
+// ============================================================
 
-struct QuizHistory {
-
-    string word;
+struct QuizHistory
+{
+    std::string word;
 
     char userAnswer;
 
-    string correctAnswer;
+    std::string correctAnswer;
+
+    bool answered;
 
     bool isCorrect;
 };
 
 
-// =========================
+// ============================================================
 // CLASS QUIZ SESSION
-// =========================
+// ============================================================
 
-class QuizSession {
-
+class QuizSession
+{
 private:
 
-    vector<Word> wordBank;
+    std::vector<Word> wordBank;
 
-    vector<Question> questions;
+    std::vector<Question> questions;
 
-    vector<string> wrongWords;
+    std::vector<std::string> wrongWords;
 
-    // Lưu toàn bộ câu đã làm
-    vector<QuizHistory> history;
+    std::vector<QuizHistory> history;
 
     int currentQuestion;
 
@@ -106,11 +125,21 @@ private:
 
     void showResult();
 
+    bool allQuestionsAnswered() const;
+
+    void displayCurrentQuestion();
+
+    void displayUnansweredQuestions() const;
+
+    bool showSubmitConfirmation();
+
+    void runQuiz();
+
 
 public:
 
     QuizSession(
-        vector<Word> words
+        std::vector<Word> words
     );
 
     void startQuiz();

@@ -1,11 +1,138 @@
-
+#include <conio.h>
+#include <windows.h>
 #include <iostream>
 #include <vector>
+
 #include "quiz.h"
 
 using namespace std;
 
-int main() {
+
+// ============================================================
+// SET CONSOLE DISPLAY MODE
+// ============================================================
+
+BOOL NT_SetConsoleDisplayMode(
+    HANDLE hOutputHandle,
+    DWORD dwNewMode
+)
+{
+    typedef BOOL(WINAPI *SCDMProc_t)(
+        HANDLE,
+        DWORD,
+        LPDWORD
+    );
+
+    SCDMProc_t SetConsoleDisplayMode;
+
+    HMODULE hKernel32;
+
+    BOOL bFreeLib = FALSE;
+    BOOL ret;
+
+    const char KERNEL32_NAME[] = "kernel32.dll";
+
+
+    hKernel32 =
+        GetModuleHandleA(KERNEL32_NAME);
+
+
+    if (hKernel32 == NULL)
+    {
+        hKernel32 =
+            LoadLibraryA(KERNEL32_NAME);
+
+        if (hKernel32 == NULL)
+        {
+            return FALSE;
+        }
+
+        bFreeLib = TRUE;
+    }
+
+
+    SetConsoleDisplayMode =
+        (SCDMProc_t)GetProcAddress(
+            hKernel32,
+            "SetConsoleDisplayMode"
+        );
+
+
+    if (SetConsoleDisplayMode == NULL)
+    {
+        SetLastError(
+            ERROR_CALL_NOT_IMPLEMENTED
+        );
+
+        ret = FALSE;
+    }
+    else
+    {
+        DWORD tmp;
+
+        ret =
+            SetConsoleDisplayMode(
+                hOutputHandle,
+                dwNewMode,
+                &tmp
+            );
+    }
+
+
+    if (bFreeLib)
+    {
+        FreeLibrary(hKernel32);
+    }
+
+
+    return ret;
+}
+
+
+// ============================================================
+// FULL SCREEN
+// ============================================================
+
+void fullscreen()
+{
+    keybd_event(
+        VK_MENU,
+        0x38,
+        0,
+        0
+    );
+
+    keybd_event(
+        VK_RETURN,
+        0x1c,
+        0,
+        0
+    );
+
+    keybd_event(
+        VK_RETURN,
+        0x1c,
+        KEYEVENTF_KEYUP,
+        0
+    );
+
+    keybd_event(
+        VK_MENU,
+        0x38,
+        KEYEVENTF_KEYUP,
+        0
+    );
+}
+
+
+// ============================================================
+// MAIN
+// ============================================================
+
+int main()
+{
+    fullscreen();
+
 
     vector<Word> words = {
 
@@ -24,41 +151,85 @@ int main() {
         Word("possible", "co the"),
         Word("different", "khac nhau"),
         Word("problem", "van de")
+
     };
+
 
     QuizSession quiz(words);
 
-    int choice;
 
-    do {
+    while (true)
+    {
+        system("cls");
 
-        cout << "\n\n";
-        cout << "========================================\n";
-        cout << "       VOCABULARY QUIZ SYSTEM\n";
-        cout << "========================================\n";
 
-        cout << "1. Start Quiz\n";
-        cout << "2. Exit\n";
+        cout
+            << "========================================\n";
 
-        cout << "\nYour choice: ";
+        cout
+            << "       VOCABULARY QUIZ SYSTEM\n";
 
-        cin >> choice;
+        cout
+            << "========================================\n\n";
 
-        switch (choice) {
 
-            case 1:
-                quiz.startQuiz();
-                break;
+        cout
+            << "1. Start Quiz\n";
 
-            case 2:
-                cout << "\nThank you for using the system!\n";
-                break;
+        cout
+            << "2. Exit\n\n";
 
-            default:
-                cout << "\nInvalid choice!\n";
+
+        cout
+            << "Press 1 or 2: ";
+
+
+        char choice = _getch();
+
+
+        switch (choice)
+        {
+        case '1':
+
+            cout << "1\n";
+
+            quiz.startQuiz();
+
+            break;
+
+
+        case '2':
+
+            cout << "2\n";
+
+            cout
+                << "\nThank you for using the system!\n";
+
+            return 0;
+
+
+        case 27:
+
+            cout
+                << "\n\nESC pressed. Exiting...\n";
+
+            return 0;
+
+
+        default:
+
+            cout
+                << "\n\nInvalid choice!";
+
+            cout
+                << "\nPress any key to continue...";
+
+            _getch();
+
+            break;
         }
+    }
 
-    } while (choice != 2);
 
     return 0;
 }
