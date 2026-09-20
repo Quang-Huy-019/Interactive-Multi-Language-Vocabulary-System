@@ -1,95 +1,141 @@
 #include "quiz.h"
 
 #include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <random>
+#include <cstdlib>
+#include <limits>
 #include <cctype>
+#include <random>
+#include <algorithm>
+
 #include <iomanip>
 
 using namespace std;
 
 
-// ============================================================
+// =====================================================
+// CLEAR TERMINAL
+// =====================================================
+
+void clearTerminal() {
+
+    system("cls");
+}
+
+
+// =====================================================
 // CLASS WORD
-// ============================================================
+// =====================================================
 
 Word::Word() {
+
     english = "";
     vietnamese = "";
 }
 
+
 Word::Word(string en, string vi) {
+
     english = en;
     vietnamese = vi;
 }
 
+
 string Word::getEnglish() const {
+
     return english;
 }
 
+
 string Word::getVietnamese() const {
+
     return vietnamese;
 }
 
 
-// ============================================================
+// =====================================================
 // CLASS QUESTION
-// ============================================================
+// =====================================================
 
 Question::Question(
     Word w,
     vector<string> opts,
     int correct
 ) {
+
     word = w;
+
     options = opts;
+
     correctAnswer = correct;
 }
 
+
+// =====================================================
+// HIỆN CÂU HỎI
+// =====================================================
 
 void Question::showQuestion(
     int number,
     int total
 ) const {
 
-    cout << "\n========================================\n";
+    cout << "========================================\n";
 
-    cout << "Question "
+    cout << "             QUESTION "
          << number
          << "/"
          << total
-         << endl;
+         << "\n";
 
     cout << "========================================\n";
 
-    cout << "What does \""
+
+    cout << "\nWhat is the meaning of: "
          << word.getEnglish()
-         << "\" mean?\n\n";
+         << "?\n\n";
 
 
-    for (int i = 0; i < options.size(); i++) {
+    char letter = 'A';
 
-        cout << char('A' + i)
+
+    for (
+        int i = 0;
+        i < static_cast<int>(options.size());
+        i++
+    ) {
+
+        cout << letter
              << ". "
              << options[i]
-             << endl;
-    }
+             << "\n";
 
-    cout << "\nYour answer: ";
+        letter++;
+    }
 }
 
 
-bool Question::checkAnswer(char answer) const {
+// =====================================================
+// KIỂM TRA ĐÁP ÁN
+// =====================================================
+
+bool Question::checkAnswer(
+    char answer
+) const {
 
     answer = toupper(answer);
 
-    int choice = answer - 'A';
 
-    return choice == correctAnswer;
+    int selected =
+        answer - 'A';
+
+
+    return selected == correctAnswer;
 }
 
+
+// =====================================================
+// LẤY ĐÁP ÁN ĐÚNG
+// =====================================================
 
 string Question::getCorrectAnswer() const {
 
@@ -97,15 +143,19 @@ string Question::getCorrectAnswer() const {
 }
 
 
+// =====================================================
+// LẤY TỪ TIẾNG ANH
+// =====================================================
+
 string Question::getWord() const {
 
     return word.getEnglish();
 }
 
 
-// ============================================================
+// =====================================================
 // CLASS QUIZ SESSION
-// ============================================================
+// =====================================================
 
 QuizSession::QuizSession(
     vector<Word> words
@@ -119,15 +169,16 @@ QuizSession::QuizSession(
 }
 
 
-// ============================================================
-// RANDOMIZE WORDS
-// ============================================================
+// =====================================================
+// SHUFFLE WORDS
+// =====================================================
 
 void QuizSession::shuffleWords() {
 
     random_device rd;
 
     mt19937 g(rd());
+
 
     shuffle(
         wordBank.begin(),
@@ -137,9 +188,9 @@ void QuizSession::shuffleWords() {
 }
 
 
-// ============================================================
+// =====================================================
 // CREATE QUESTIONS
-// ============================================================
+// =====================================================
 
 void QuizSession::createQuestions(
     int numberOfQuestions
@@ -147,114 +198,125 @@ void QuizSession::createQuestions(
 
     questions.clear();
 
-    // Random danh sách từ
+
     shuffleWords();
 
 
-    // Nếu số câu hỏi lớn hơn số từ
-    if (numberOfQuestions > wordBank.size()) {
+    for (
+        int i = 0;
+        i < numberOfQuestions;
+        i++
+    ) {
 
-        numberOfQuestions = wordBank.size();
-    }
-
-
-    // Tạo từng câu hỏi
-    for (int i = 0;
-         i < numberOfQuestions;
-         i++) {
-
-        // Từ hiện tại
-        Word currentWord = wordBank[i];
+        Word correctWord =
+            wordBank[i];
 
 
-        // Danh sách đáp án
+
         vector<string> options;
 
 
-        // ----------------------------------------------------
+        // =========================
         // ĐÁP ÁN ĐÚNG
-        // ----------------------------------------------------
+        // =========================
 
         options.push_back(
-            currentWord.getVietnamese()
+            correctWord.getVietnamese()
         );
 
 
-        // ----------------------------------------------------
-        // TÌM CÁC ĐÁP ÁN SAI
-        // ----------------------------------------------------
+        // =========================
+        // CHỌN 3 ĐÁP ÁN SAI
+        // =========================
 
-        vector<int> indexes;
+        vector<int> usedIndexes;
 
 
-        for (int j = 0;
-             j < wordBank.size();
-             j++) {
+        usedIndexes.push_back(i);
 
-            // Không lấy chính từ đang hỏi
-            if (j != i) {
 
-                indexes.push_back(j);
+        while (options.size() < 4) {
+
+            random_device rd;
+
+            mt19937 g(rd());
+
+
+            uniform_int_distribution<int> dist(
+                0,
+                static_cast<int>(
+                    wordBank.size()
+                ) - 1
+            );
+
+
+            int randomIndex =
+                dist(g);
+
+
+            bool alreadyUsed = false;
+
+
+            for (
+                int index : usedIndexes
+            ) {
+
+                if (
+                    index == randomIndex
+                ) {
+
+                    alreadyUsed = true;
+
+                    break;
+                }
+            }
+
+
+            if (!alreadyUsed) {
+
+                options.push_back(
+                    wordBank[randomIndex]
+                        .getVietnamese()
+                );
+
+
+                usedIndexes.push_back(
+                    randomIndex
+                );
             }
         }
 
 
-        // Random
-        random_device rd;
-
-        mt19937 g(rd());
-
-        shuffle(
-            indexes.begin(),
-            indexes.end(),
-            g
-        );
-
-
-        // Lấy tối đa 3 đáp án sai
-        int wrongCount =
-            min(
-                3,
-                (int)indexes.size()
-            );
-
-
-        for (int j = 0;
-             j < wrongCount;
-             j++) {
-
-            options.push_back(
-                wordBank[indexes[j]]
-                    .getVietnamese()
-            );
-        }
-
-
-        // ----------------------------------------------------
-        // RANDOM VỊ TRÍ ĐÁP ÁN
-        // ----------------------------------------------------
+        // =========================
+        // XÁO TRỘN ĐÁP ÁN
+        // =========================
 
         shuffle(
             options.begin(),
             options.end(),
-            g
+            mt19937(random_device()())
         );
 
 
-        // ----------------------------------------------------
+        // =========================
         // TÌM VỊ TRÍ ĐÁP ÁN ĐÚNG
-        // ----------------------------------------------------
+        // =========================
 
         int correctIndex = 0;
 
 
-        for (int j = 0;
-             j < options.size();
-             j++) {
+        for (
+            int j = 0;
+            j < static_cast<int>(
+                options.size()
+            );
+            j++
+        ) {
 
             if (
                 options[j]
-                == currentWord.getVietnamese()
+                ==
+                correctWord.getVietnamese()
             ) {
 
                 correctIndex = j;
@@ -264,83 +326,107 @@ void QuizSession::createQuestions(
         }
 
 
-        // ----------------------------------------------------
+        // =========================
         // TẠO QUESTION
-        // ----------------------------------------------------
+        // =========================
 
-        Question q(
-            currentWord,
-            options,
-            correctIndex
-        );
+        questions.push_back(
+            Question(
+                correctWord,
+                options,
+                correctIndex
+            )
+         );
 
 
-        questions.push_back(q);
-    }
+     }
 }
 
 
-// ============================================================
+// =====================================================
 // START QUIZ
-// ============================================================
+// =====================================================
+
+
 
 void QuizSession::startQuiz() {
 
-    // --------------------------------------------------------
-    // KIỂM TRA SỐ LƯỢNG TỪ
-    // --------------------------------------------------------
-
-    if (wordBank.size() < 4) {
-
-        cout << "\n";
-        cout << "Khong du tu vung de tao Quiz!\n";
-
-        return;
-    }
-
-
     int numberOfQuestions;
-
-
-    // --------------------------------------------------------
-    // HEADER
-    // --------------------------------------------------------
+    // =========================
+    // START QUIZ
+    // =========================
 
     cout << "\n========================================\n";
 
-    cout << "           START QUIZ\n";
+    cout << "          START VOCABULARY QUIZ\n";
 
     cout << "========================================\n";
 
 
-    cout << "So cau hoi (1 - "
-         << wordBank.size()
-         << "): ";
+    cout << "\nHow many questions do you want? ";
 
 
     cin >> numberOfQuestions;
 
 
-    // --------------------------------------------------------
-    // KIỂM TRA SỐ CÂU HỎI
-    // --------------------------------------------------------
+    // =========================
+    // KIỂM TRA INPUT
+    // =========================
 
-    if (
-        numberOfQuestions <= 0
-        ||
-        numberOfQuestions > wordBank.size()
-    ) {
+    if (cin.fail()) {
 
-        cout << "\n";
-        cout << "So luong cau hoi khong hop le!\n";
+        cin.clear();
+
+
+        cin.ignore(
+            numeric_limits<streamsize>::max(),
+            '\n'
+        );
+
+
+        cout << "\nInvalid input!\n";
+
 
         return;
     }
 
 
-    // --------------------------------------------------------
-    // RESET DỮ LIỆU
-    // --------------------------------------------------------
+    // =========================
+    // KIỂM TRA SỐ CÂU
+    // =========================
+
+    if (
+        numberOfQuestions < 1
+        ||
+        numberOfQuestions
+        >
+        static_cast<int>(
+            wordBank.size()
+        )
+    ) {
+
+        cout << "\nInvalid number of questions!\n";
+
+
+        cout << "Please choose from 1 to "
+             << wordBank.size()
+             << ".\n";
+
+
+        return;
+    }
+
+
+    // =================================================
+    // CLEAR SAU KHI NHẬP SỐ CÂU
+    // =================================================
+
+    clearTerminal();
+
+
+    // =================================================
+    // RESET QUIZ
+    // =================================================
 
     score = 0;
 
@@ -348,112 +434,175 @@ void QuizSession::startQuiz() {
 
     wrongWords.clear();
 
+    history.clear();
 
-    // --------------------------------------------------------
+
+    // =================================================
     // TẠO CÂU HỎI
-    // --------------------------------------------------------
+    // =================================================
 
     createQuestions(
         numberOfQuestions
     );
 
 
-    // --------------------------------------------------------
-    // LÀM QUIZ
-    // --------------------------------------------------------
+    // =================================================
+    // BẮT ĐẦU LÀM QUIZ
+    // =================================================
 
     for (
         int i = 0;
-        i < questions.size();
+        i < numberOfQuestions;
         i++
     ) {
 
         currentQuestion = i;
 
 
-        // Hiển thị câu hỏi
+        // =============================================
+        // HIỆN CÂU HỎI
+        // =============================================
+
         questions[i].showQuestion(
             i + 1,
-            questions.size()
+            numberOfQuestions
         );
 
 
-        // Nhập đáp án
+        // =============================================
+        // NHẬP ĐÁP ÁN
+        // =============================================
+
         char answer;
+
+
+        cout << "\nYour answer: ";
+
 
         cin >> answer;
 
 
-        // ----------------------------------------------------
+        answer = toupper(answer);
+
+
+        // =============================================
         // KIỂM TRA ĐÁP ÁN
-        // ----------------------------------------------------
+        // =============================================
 
-        if (
-            questions[i]
-                .checkAnswer(answer)
-        ) {
+        bool correct =
+            questions[i].checkAnswer(
+                answer
+            );
 
-            cout << "\n";
-            cout << "CORRECT!\n";
 
+        // =============================================
+        // LƯU LỊCH SỬ
+        // =============================================
+
+        QuizHistory result;
+
+
+        result.word =
+            questions[i].getWord();
+
+
+        result.userAnswer =
+            answer;
+
+
+        result.correctAnswer =
+            questions[i].getCorrectAnswer();
+
+
+        result.isCorrect =
+            correct;
+
+
+        history.push_back(result);
+
+
+        // =============================================
+        // CẬP NHẬT SCORE
+        // =============================================
+
+        if (correct) {
 
             score++;
+
         }
 
         else {
 
-            cout << "\n";
-            cout << "WRONG!\n";
-
-
-            cout << "Correct answer: "
-                 << questions[i]
-                        .getCorrectAnswer()
-                 << endl;
-
-
-            // Lưu từ trả lời sai
             wrongWords.push_back(
                 questions[i].getWord()
             );
         }
+
+
+        // =============================================
+        // NẾU CHƯA PHẢI CÂU CUỐI
+        // → CLEAR TERMINAL
+        // → HIỆN CÂU TIẾP
+        // =============================================
+
+        if (
+            i < numberOfQuestions - 1
+        ) {
+
+            clearTerminal();
+        }
     }
 
 
-    // --------------------------------------------------------
-    // HIỂN THỊ KẾT QUẢ
-    // --------------------------------------------------------
+    // =================================================
+    // LÀM XONG TOÀN BỘ QUIZ
+    // CLEAR TERMINAL
+    // =================================================
+
+    clearTerminal();
+
+
+    // =================================================
+    // HIỆN RESULT
+    // =================================================
 
     showResult();
 }
 
 
-// ============================================================
+// =====================================================
 // SHOW RESULT
-// ============================================================
+// =====================================================
 
 void QuizSession::showResult() {
 
-    int total = questions.size();
-
-    int wrong = total - score;
-
-
-    // --------------------------------------------------------
-    // TÍNH ĐỘ CHÍNH XÁC
-    // --------------------------------------------------------
-
-    double accuracy =
-        (double)score
-        / total
-        * 100;
+    int total =
+        static_cast<int>(
+            history.size()
+        );
 
 
-    // --------------------------------------------------------
-    // HEADER
-    // --------------------------------------------------------
+    int wrong =
+        total - score;
 
-    cout << "\n\n";
+
+    double accuracy = 0;
+
+
+    if (total > 0) {
+
+        accuracy =
+            static_cast<double>(score)
+            /
+            total
+            *
+            100;
+    }
+
+
+    // =================================================
+    // QUIZ RESULT
+    // =================================================
 
     cout << "========================================\n";
 
@@ -462,27 +611,82 @@ void QuizSession::showResult() {
     cout << "========================================\n";
 
 
-    // --------------------------------------------------------
-    // THỐNG KÊ
-    // --------------------------------------------------------
+    // =================================================
+    // TẤT CẢ CÂU ĐÃ LÀM
+    // =================================================
 
-    cout << "Total questions : "
+    cout << "\n";
+    cout << "          QUESTIONS ANSWERED\n";
+    cout << "----------------------------------------\n";
+
+
+    for (
+        int i = 0;
+        i < static_cast<int>(
+            history.size()
+        );
+        i++
+    ) {
+
+        cout << "\nQuestion "
+             << i + 1
+             << ": "
+             << history[i].word
+             << "\n";
+
+
+        cout << "Your answer: "
+             << history[i].userAnswer
+             << "\n";
+
+
+        if (
+            history[i].isCorrect
+        ) {
+
+            cout << "Result: CORRECT\n";
+
+        }
+        else {
+
+            cout << "Result: WRONG\n";
+
+
+            cout << "Correct answer: "
+                 << history[i].correctAnswer
+                 << "\n";
+        }
+    }
+
+
+    // =================================================
+    // SCORE
+    // =================================================
+
+    cout << "\n========================================\n";
+
+    cout << "                 SCORE\n";
+
+    cout << "========================================\n";
+
+
+    cout << "\nTotal questions : "
          << total
-         << endl;
+         << "\n";
 
 
     cout << "Correct         : "
          << score
-         << endl;
+         << "\n";
 
 
     cout << "Wrong           : "
          << wrong
-         << endl;
+         << "\n";
 
 
     cout << fixed
-         << setprecision(2);
+         << setprecision(1);
 
 
     cout << "Accuracy        : "
@@ -494,77 +698,113 @@ void QuizSession::showResult() {
          << score
          << "/"
          << total
-         << endl;
+         << "\n";
 
 
-    // --------------------------------------------------------
-    // XẾP LOẠI
-    // --------------------------------------------------------
+    // =================================================
+    // RATING
+    // =================================================
 
-    cout << "\nRating: ";
+    cout << "\nRating          : ";
 
 
     if (accuracy >= 90) {
 
         cout << "Excellent!";
-    }
-
-    else if (accuracy >= 80) {
-
-        cout << "Very Good!";
-    }
-
-    else if (accuracy >= 65) {
+     }
+    else if (accuracy >= 70) {
 
         cout << "Good!";
-    }
 
+     }
     else if (accuracy >= 50) {
 
-        cout << "Need More Practice!";
-    }
+        cout << "Keep practicing!";
 
+     }
     else {
 
-        cout << "Keep Practicing!";
+        cout << "Need more practice!";
     }
 
 
-    cout << endl;
+    // =================================================
+    // WORDS LEARNED
+    // =================================================
+
+    cout << "\n\n========================================\n";
+
+    cout << "             WORDS LEARNED\n";
+
+    cout << "========================================\n";
 
 
-    // --------------------------------------------------------
-    // DANH SÁCH TỪ SAI
-    // --------------------------------------------------------
+    for (
+        int i = 0;
+        i < static_cast<int>(
+            history.size()
+        );
+        i++
+    ) {
 
-    if (!wrongWords.empty()) {
+        cout << i + 1
+             << ". "
+             << history[i].word
+             << "\n";
+    }
 
-        cout << "\n----------------------------------------\n";
 
-        cout << "           WORDS TO REVIEW\n";
+    // =================================================
+    // WORDS TO REVIEW
+    // =================================================
 
-        cout << "----------------------------------------\n";
+    cout << "\n========================================\n";
 
+    cout << "             WORDS TO REVIEW\n";
+
+    cout << "========================================\n";
+
+
+    if (wrongWords.empty()) {
+
+        cout << "\nNo words to review!\n";
+
+    }
+    else {
 
         for (
             int i = 0;
-            i < wrongWords.size();
+            i < static_cast<int>(
+                wrongWords.size()
+            );
             i++
         ) {
 
             cout << i + 1
                  << ". "
                  << wrongWords[i]
-                 << endl;
+                 << "\n";
         }
     }
 
-    else {
-
-        cout << "\n";
-        cout << "Perfect! No weak words.\n";
-    }
 
 
-    cout << "========================================\n";
+    // =================================================
+    // QUAY VỀ MAIN MENU
+    // =================================================
+
+    cout << "\n========================================\n";
+
+    cout << "\nPress ENTER to return to main menu...";
+
+
+    // Xóa ký tự '\n' còn lại sau cin >> answer
+    cin.ignore(
+        numeric_limits<streamsize>::max(),
+        '\n'
+    );
+
+
+    // Chờ ENTER
+    cin.get();
 }
