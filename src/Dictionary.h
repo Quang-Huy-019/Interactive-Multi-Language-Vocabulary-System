@@ -13,7 +13,7 @@ private:
 
 public:
     Dictionary() {}   // Kh?i t?o r?ng
-    ~Dictionary();    // CH? KHAI B¡O –?U H¿M ? –¬Y (d?u ;)
+    ~Dictionary();    // CH? KHAI B√ÅO √ê?U H√ÄM ? √ê√ÇY (d?u ;)
 
     bool addWord(Word* word);
     Word* searchWord(string englishKey);
