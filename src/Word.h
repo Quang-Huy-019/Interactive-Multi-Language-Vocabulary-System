@@ -24,10 +24,10 @@ public:
     int getLeitnerBox() const { return leitnerBox; }
     void setLeitnerBox(int box) { leitnerBox = box; }
 
-    virtual void displayDetails() const = 0; // Hàm ?o thu?n túy
+    virtual void displayDetails() const = 0; // HÃ m ?o thu?n tÃºy
 };
 
-// 2. L?p T? thông d?ng
+// 2. L?p T? thÃ´ng d?ng
 class GeneralWord : public Word {
 private:
     string partOfSpeech;
@@ -38,7 +38,7 @@ public:
     }
 };
 
-// 3. L?p Thu?t ng? chuyên ngành (B? sung thêm)
+// 3. L?p Thu?t ng? chuyÃªn ngÃ nh (B? sung thÃªm)
 class TechnicalTerm : public Word {
 private:
     string field;
@@ -49,7 +49,7 @@ public:
     }
 };
 
-// 4. L?p Thành ng? (B? sung thêm)
+// 4. L?p ThÃ nh ng? (B? sung thÃªm)
 class Idiom : public Word {
 private:
     string origin;
