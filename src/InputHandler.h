@@ -9,29 +9,29 @@ using namespace std;
 
 class InputHandler {
 public:
-    // 1. Hàm ép bu?c ngu?i dùng ph?i nh?p dúng s? nguyên
+    // 1. HÃ m Ã©p bu?c ngu?i dÃ¹ng ph?i nh?p dÃºng s? nguyÃªn
     static int getValidInt(string prompt) {
         int value;
         while (true) {
             cout << prompt;
             if (cin >> value) {
-                // Nh?p dúng s? -> D?n s?ch phím Enter th?a trong b? nh? d?m
+                // Nh?p dÃºng s? -> D?n s?ch phÃ­m Enter th?a trong b? nh? d?m
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 return value;
             } else {
-                // B? l?i (do nh?p ch?) -> B?t l?i và yêu c?u nh?p l?i
+                // B? l?i (do nh?p ch?) -> B?t l?i vÃ  yÃªu c?u nh?p l?i
                 cout << "[!] Loi: Vui long chi nhap so nguyen!\n";
-                cin.clear(); // Xóa tr?ng thái l?i c?a cin
-                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // V?t b? chu?i kı t? sai
+                cin.clear(); // XÃ³a tr?ng thÃ¡i l?i c?a cin
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // V?t b? chu?i kÃ½ t? sai
             }
         }
     }
 
-    // 2. Hàm nh?p chu?i van b?n an toàn (ch?p nh?n c? d?u cách)
+    // 2. HÃ m nh?p chu?i van b?n an toÃ n (ch?p nh?n c? d?u cÃ¡ch)
     static string getValidString(string prompt) {
         string value;
         cout << prompt;
-        getline(cin, value); // Dùng getline thay vì cin >> d? nh?n du?c c? câu dài
+        getline(cin, value); // DÃ¹ng getline thay vÃ¬ cin >> d? nh?n du?c c? cÃ¢u dÃ i
         return value;
     }
 };
