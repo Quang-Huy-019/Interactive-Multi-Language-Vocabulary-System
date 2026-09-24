@@ -12,6 +12,7 @@
 
 using namespace std;
 
+
 // ============================================================
 // CLEAR TERMINAL
 // ============================================================
@@ -21,119 +22,6 @@ void clearTerminal()
     system("cls");
 }
 
-// ============================================================
-// QUIZ TIMER
-// ============================================================
-
-// 1 question = 90 seconds (1 minute 30 seconds)
-static ULONGLONG quizEndTime = 0;
-
-static int getUnansweredCount(const vector<QuizHistory>& history)
-{
-    int count = 0;
-
-    for (const QuizHistory& item : history)
-    {
-        if (!item.answered)
-        {
-            count++;
-        }
-    }
-
-    return count;
-}
-
-static void displayTimer(int unansweredCount)
-{
-    if (quizEndTime == 0)
-    {
-        return;
-    }
-
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_SCREEN_BUFFER_INFO csbi;
-
-    if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
-    {
-        return;
-    }
-
-    int width =
-        csbi.srWindow.Right -
-        csbi.srWindow.Left +
-        1;
-
-    int leftPosition = width - 35;
-
-    if (leftPosition < 0)
-    {
-        leftPosition = 0;
-    }
-
-    // Find the row directly below the UNANSWERED panel.
-    int y = 5;
-
-    // Top border + title + bottom border
-    y += 3;
-
-    if (unansweredCount > 0)
-    {
-        y += unansweredCount;
-    }
-    else
-    {
-        y += 1;
-    }
-
-    // Bottom border of UNANSWERED panel
-    y += 1;
-
-    COORD position;
-    position.X = (SHORT)leftPosition;
-    position.Y = (SHORT)y;
-
-    SetConsoleCursorPosition(hConsole, position);
-    cout << "          TIME";
-
-    position.Y++;
-    SetConsoleCursorPosition(hConsole, position);
-    cout << "==============================";
-
-    position.Y++;
-    SetConsoleCursorPosition(hConsole, position);
-
-    ULONGLONG now = GetTickCount64();
-
-    ULONGLONG remainingMs =
-        (now < quizEndTime)
-            ? (quizEndTime - now)
-            : 0;
-
-    unsigned long long totalSeconds =
-        (remainingMs + 999) / 1000;
-
-    unsigned long long minutes =
-        totalSeconds / 60;
-
-    unsigned long long seconds =
-        totalSeconds % 60;
-
-    cout << "          "
-         << setfill('0')
-         << setw(2) << minutes
-         << ":"
-         << setw(2) << seconds
-         << setfill(' ');
-
-    position.Y++;
-    SetConsoleCursorPosition(hConsole, position);
-    cout << "==============================";
-
-    COORD normalPosition;
-    normalPosition.X = 0;
-    normalPosition.Y = 0;
-    SetConsoleCursorPosition(hConsole, normalPosition);
-}
 
 // ============================================================
 // WORD
@@ -145,21 +33,25 @@ Word::Word()
     vietnamese = "";
 }
 
+
 Word::Word(string en, string vi)
 {
     english = en;
     vietnamese = vi;
 }
 
+
 string Word::getEnglish() const
 {
     return english;
 }
 
+
 string Word::getVietnamese() const
 {
     return vietnamese;
 }
+
 
 // ============================================================
 // QUESTION
@@ -176,6 +68,7 @@ Question::Question(
     correctAnswer = correct;
 }
 
+
 void Question::showQuestion(
     int number,
     int total
@@ -191,9 +84,11 @@ void Question::showQuestion(
 
     cout << "========================================\n\n";
 
+
     cout << "What is the meaning of:\n\n";
 
     cout << "  " << word.getEnglish() << "\n\n";
+
 
     for (int i = 0; i < (int)options.size(); i++)
     {
@@ -207,6 +102,7 @@ void Question::showQuestion(
     cout << "\n";
 }
 
+
 bool Question::checkAnswer(char answer) const
 {
     answer = toupper(answer);
@@ -216,15 +112,18 @@ bool Question::checkAnswer(char answer) const
     return index == correctAnswer;
 }
 
+
 string Question::getCorrectAnswer() const
 {
     return options[correctAnswer];
 }
 
+
 string Question::getWord() const
 {
     return word.getEnglish();
 }
+
 
 string Question::getOption(int index) const
 {
@@ -237,6 +136,7 @@ string Question::getOption(int index) const
     return "";
 }
 
+
 // ============================================================
 // QUIZ SESSION CONSTRUCTOR
 // ============================================================
@@ -244,9 +144,12 @@ string Question::getOption(int index) const
 QuizSession::QuizSession(vector<Word> words)
 {
     wordBank = words;
+
     currentQuestion = 0;
+
     score = 0;
 }
+
 
 // ============================================================
 // SHUFFLE WORDS
@@ -255,6 +158,7 @@ QuizSession::QuizSession(vector<Word> words)
 void QuizSession::shuffleWords()
 {
     random_device rd;
+
     mt19937 g(rd());
 
     shuffle(
@@ -264,6 +168,7 @@ void QuizSession::shuffleWords()
     );
 }
 
+
 // ============================================================
 // CREATE QUESTIONS
 // ============================================================
@@ -272,24 +177,29 @@ void QuizSession::createQuestions(int numberOfQuestions)
 {
     questions.clear();
 
+
     for (int i = 0;
          i < numberOfQuestions;
          i++)
     {
         Word currentWord = wordBank[i];
 
+
         vector<string> options;
+
 
         // Correct answer
         options.push_back(
             currentWord.getVietnamese()
         );
 
+
         // ================================================
         // CREATE WRONG ANSWERS
         // ================================================
 
         vector<int> indexes;
+
 
         for (int j = 0;
              j < (int)wordBank.size();
@@ -301,8 +211,11 @@ void QuizSession::createQuestions(int numberOfQuestions)
             }
         }
 
+
         random_device rd;
+
         mt19937 g(rd());
+
 
         shuffle(
             indexes.begin(),
@@ -310,12 +223,14 @@ void QuizSession::createQuestions(int numberOfQuestions)
             g
         );
 
+
         for (int j = 0; j < 3; j++)
         {
             options.push_back(
                 wordBank[indexes[j]].getVietnamese()
             );
         }
+
 
         // ================================================
         // SHUFFLE OPTIONS
@@ -327,7 +242,9 @@ void QuizSession::createQuestions(int numberOfQuestions)
             g
         );
 
+
         int correctIndex = 0;
+
 
         for (int j = 0;
              j < (int)options.size();
@@ -337,9 +254,11 @@ void QuizSession::createQuestions(int numberOfQuestions)
                 currentWord.getVietnamese())
             {
                 correctIndex = j;
+
                 break;
             }
         }
+
 
         questions.push_back(
             Question(
@@ -350,6 +269,7 @@ void QuizSession::createQuestions(int numberOfQuestions)
         );
     }
 }
+
 
 // ============================================================
 // CHECK ALL QUESTIONS ANSWERED
@@ -368,6 +288,7 @@ bool QuizSession::allQuestionsAnswered() const
     return true;
 }
 
+
 // ============================================================
 // DISPLAY UNANSWERED QUESTIONS
 // ============================================================
@@ -377,56 +298,74 @@ void QuizSession::displayUnansweredQuestions() const
     HANDLE hConsole =
         GetStdHandle(STD_OUTPUT_HANDLE);
 
+
     CONSOLE_SCREEN_BUFFER_INFO csbi;
+
 
     GetConsoleScreenBufferInfo(
         hConsole,
         &csbi
     );
 
+
     int width =
         csbi.srWindow.Right -
         csbi.srWindow.Left +
         1;
 
+
     int leftPosition = width - 35;
+
 
     if (leftPosition < 0)
     {
         leftPosition = 0;
     }
 
+
     COORD position;
 
+
     position.X = leftPosition;
+
     position.Y = 5;
+
 
     SetConsoleCursorPosition(
         hConsole,
         position
     );
+
 
     cout << "==============================";
 
+
     position.Y++;
+
 
     SetConsoleCursorPosition(
         hConsole,
         position
     );
+
 
     cout << "        CHUA LAM";
 
+
     position.Y++;
+
 
     SetConsoleCursorPosition(
         hConsole,
         position
     );
 
+
     cout << "==============================";
 
+
     int count = 0;
+
 
     for (int i = 0;
          i < (int)history.size();
@@ -436,47 +375,60 @@ void QuizSession::displayUnansweredQuestions() const
         {
             position.Y++;
 
+
             SetConsoleCursorPosition(
                 hConsole,
                 position
             );
 
+
             cout << "  Cau "
                  << i + 1;
+
 
             count++;
         }
     }
 
+
     if (count == 0)
     {
         position.Y++;
+
 
         SetConsoleCursorPosition(
             hConsole,
             position
         );
 
+
         cout << "  Khong co";
     }
 
+
     position.Y++;
+
 
     SetConsoleCursorPosition(
         hConsole,
         position
     );
 
+
     cout << "==============================";
 
+
     position.X = 0;
+
     position.Y += 2;
+
 
     SetConsoleCursorPosition(
         hConsole,
         position
     );
 }
+
 
 // ============================================================
 // DISPLAY CURRENT QUESTION
@@ -489,7 +441,9 @@ void QuizSession::displayCurrentQuestion()
         questions.size()
     );
 
+
     cout << "\n";
+
 
     // ================================================
     // CURRENT ANSWER
@@ -506,7 +460,9 @@ void QuizSession::displayCurrentQuestion()
         cout << "Your answer: ---\n";
     }
 
+
     cout << "\n";
+
 
     // ================================================
     // NAVIGATION
@@ -522,14 +478,13 @@ void QuizSession::displayCurrentQuestion()
 
     cout << "\n----------------------------------------\n";
 
+
     // ================================================
     // UNANSWERED PANEL
     // ================================================
 
     displayUnansweredQuestions();
 
-    // Timer is displayed directly below the unanswered panel.
-    displayTimer(getUnansweredCount(history));
 
     // ================================================
     // SHOW SUBMIT BUTTON ONLY ON LAST QUESTION
@@ -552,6 +507,7 @@ void QuizSession::displayCurrentQuestion()
     }
 }
 
+
 // ============================================================
 // SUBMIT CONFIRMATION
 // ============================================================
@@ -560,11 +516,13 @@ bool QuizSession::showSubmitConfirmation()
 {
     clearTerminal();
 
+
     cout << "========================================\n";
 
     cout << "              NOP BAI\n";
 
     cout << "========================================\n\n";
+
 
     if (!allQuestionsAnswered())
     {
@@ -572,10 +530,13 @@ bool QuizSession::showSubmitConfirmation()
 
         cout << "Ban van con cau hoi chua lam.\n\n";
 
+
         displayUnansweredQuestions();
+
 
         cout << "\n";
     }
+
 
     cout << "Ban co chac muon nop bai khong?\n\n";
 
@@ -585,15 +546,19 @@ bool QuizSession::showSubmitConfirmation()
 
     cout << "Lua chon: ";
 
+
     int key = _getch();
+
 
     if (key == '1')
     {
         return true;
     }
 
+
     return false;
 }
+
 
 // ============================================================
 // RUN QUIZ
@@ -610,237 +575,236 @@ void QuizSession::runQuiz()
 
         clearTerminal();
 
+
         // ====================================================
         // DISPLAY CURRENT QUESTION
         // ====================================================
 
         displayCurrentQuestion();
 
+
         // ====================================================
-        // WAIT FOR KEY WHILE TIMER KEEPS RUNNING
+        // GET KEY
         // ====================================================
 
-        while (true)
+        int key = _getch();
+
+
+        // ====================================================
+        // ARROW KEYS
+        // ====================================================
+
+        if (key == 0 || key == 224)
         {
-            // ------------------------------------------------
-            // TIME IS UP
-            // ------------------------------------------------
+            int arrow = _getch();
 
-            ULONGLONG now = GetTickCount64();
 
-            if (now >= quizEndTime)
+            // =================================================
+            // LEFT
+            // =================================================
+
+            if (arrow == 75)
             {
-                // Automatically submit without confirmation.
-                quizEndTime = 0;
+                if (currentQuestion > 0)
+                {
+                    currentQuestion--;
+                }
+
+                continue;
+            }
+
+
+            // =================================================
+            // RIGHT
+            // =================================================
+
+            if (arrow == 77)
+            {
+                if (currentQuestion <
+                    (int)questions.size() - 1)
+                {
+                    currentQuestion++;
+                }
+
+                continue;
+            }
+        }
+
+
+        // ====================================================
+        // ANSWER A - D
+        // ====================================================
+
+        if (key >= 'a' && key <= 'd')
+        {
+            key = toupper(key);
+        }
+
+
+        if (key >= 'A' && key <= 'D')
+        {
+            // =================================================
+            // SAVE ANSWER
+            // =================================================
+
+            history[currentQuestion].userAnswer =
+                key;
+
+
+            history[currentQuestion].answered =
+                true;
+
+
+            history[currentQuestion].isCorrect =
+                questions[currentQuestion].checkAnswer(
+                    key
+                );
+
+
+            // =================================================
+            // NOT LAST QUESTION
+            // =================================================
+
+            if (currentQuestion <
+                (int)questions.size() - 1)
+            {
+                currentQuestion++;
+
+                continue;
+            }
+
+
+            // =================================================
+            // LAST QUESTION
+            // =================================================
+
+            // Không clear ở đây.
+            // Vòng while tiếp theo sẽ tự:
+            //
+            // 1. clearTerminal()
+            // 2. displayCurrentQuestion()
+            //
+            // nên câu cuối chỉ xuất hiện 1 lần.
+
+            continue;
+        }
+
+
+        // ====================================================
+        // ENTER
+        // ====================================================
+
+        if (key == 13)
+        {
+            // =================================================
+            // ENTER ONLY AT LAST QUESTION
+            // =================================================
+
+            if (currentQuestion ==
+                (int)questions.size() - 1)
+            {
+                // ============================================
+                // CASE 1:
+                // ALL QUESTIONS ANSWERED
+                // ============================================
+
+                if (allQuestionsAnswered())
+                {
+                    clearTerminal();
+
+
+                    showResult();
+
+
+                    cout << "\n\nNhan ENTER de quay lai menu...";
+
+
+                    while (_getch() != 13)
+                    {
+                    }
+
+
+                    return;
+                }
+
+
+                // ============================================
+                // CASE 2:
+                // HAVE UNANSWERED QUESTIONS
+                // ============================================
 
                 clearTerminal();
 
-                showResult();
 
-                cout << "\n\nNhan ENTER de quay lai menu...";
+                cout << "========================================\n";
 
-                while (_getch() != 13)
+                cout << "              NOP BAI\n";
+
+                cout << "========================================\n\n";
+
+
+                cout << "CANH BAO!\n";
+
+                cout << "Ban van con cau hoi chua lam.\n\n";
+
+
+                displayUnansweredQuestions();
+
+
+                cout << "\n";
+
+
+                cout << "Ban co chac muon nop bai khong?\n\n";
+
+
+                cout << "[1] YES\n";
+
+                cout << "[2] NO\n\n";
+
+
+                cout << "Lua chon: ";
+
+
+                int confirm = _getch();
+
+
+                // =========================================
+                // YES
+                // =========================================
+
+                if (confirm == '1')
                 {
+                    clearTerminal();
+
+
+                    showResult();
+
+
+                    cout << "\n\nNhan ENTER de quay lai menu...";
+
+
+                    while (_getch() != 13)
+                    {
+                    }
+
+
+                    return;
                 }
 
-                return;
-            }
 
-            // ------------------------------------------------
-            // KEY PRESSED
-            // ------------------------------------------------
+                // =========================================
+                // NO
+                // =========================================
 
-            if (_kbhit())
-            {
-                int key = _getch();
-
-                // ====================================================
-                // ARROW KEYS
-                // ====================================================
-
-                if (key == 0 || key == 224)
+                if (confirm == '2')
                 {
-                    int arrow = _getch();
-
-                    // LEFT
-                    if (arrow == 75)
-                    {
-                        if (currentQuestion > 0)
-                        {
-                            currentQuestion--;
-                        }
-
-                        break;
-                    }
-
-                    // RIGHT
-                    if (arrow == 77)
-                    {
-                        if (currentQuestion <
-                            (int)questions.size() - 1)
-                        {
-                            currentQuestion++;
-                        }
-
-                        break;
-                    }
-
                     continue;
                 }
-
-                // ====================================================
-                // ANSWER A - D
-                // ====================================================
-
-                if (key >= 'a' && key <= 'd')
-                {
-                    key = toupper(key);
-                }
-
-                if (key >= 'A' && key <= 'D')
-                {
-                    // SAVE ANSWER
-                    history[currentQuestion].userAnswer = key;
-
-                    history[currentQuestion].answered = true;
-
-                    history[currentQuestion].isCorrect =
-                        questions[currentQuestion].checkAnswer(key);
-
-                    // NOT LAST QUESTION
-                    if (currentQuestion <
-                        (int)questions.size() - 1)
-                    {
-                        currentQuestion++;
-                        break;
-                    }
-
-                    // LAST QUESTION
-                    break;
-                }
-
-                // ====================================================
-                // ENTER
-                // ====================================================
-
-                if (key == 13)
-                {
-                    // ENTER ONLY AT LAST QUESTION
-                    if (currentQuestion ==
-                        (int)questions.size() - 1)
-                    {
-                        // ============================================
-                        // CASE 1: ALL QUESTIONS ANSWERED
-                        // ============================================
-
-                        if (allQuestionsAnswered())
-                        {
-                            quizEndTime = 0;
-
-                            clearTerminal();
-
-                            showResult();
-
-                            cout << "\n\nNhan ENTER de quay lai menu...";
-
-                            while (_getch() != 13)
-                            {
-                            }
-
-                            return;
-                        }
-
-                        // ============================================
-                        // CASE 2: HAVE UNANSWERED QUESTIONS
-                        // ============================================
-
-                        clearTerminal();
-
-                        cout << "========================================\n";
-                        cout << "              NOP BAI\n";
-                        cout << "========================================\n\n";
-
-                        cout << "CANH BAO!\n";
-                        cout << "Ban van con cau hoi chua lam.\n\n";
-
-                        displayUnansweredQuestions();
-
-                        cout << "\n";
-
-                        cout << "Ban co chac muon nop bai khong?\n\n";
-
-                        cout << "[1] YES\n";
-                        cout << "[2] NO\n\n";
-
-                        cout << "Lua chon: ";
-
-                        int confirm = 0;
-
-                        // Keep the timer running while waiting for confirmation.
-                        while (true)
-                        {
-                            if (GetTickCount64() >= quizEndTime)
-                            {
-                                // Time expired during the confirmation screen.
-                                quizEndTime = 0;
-
-                                clearTerminal();
-
-                                showResult();
-
-                                cout << "\n\nNhan ENTER de quay lai menu...";
-
-                                while (_getch() != 13)
-                                {
-                                }
-
-                                return;
-                            }
-
-                            if (_kbhit())
-                            {
-                                confirm = _getch();
-                                break;
-                            }
-
-                            displayTimer(getUnansweredCount(history));
-                            Sleep(100);
-                        }
-
-                        // YES
-                        if (confirm == '1')
-                        {
-                            quizEndTime = 0;
-
-                            clearTerminal();
-
-                            showResult();
-
-                            cout << "\n\nNhan ENTER de quay lai menu...";
-
-                            while (_getch() != 13)
-                            {
-                            }
-
-                            return;
-                        }
-
-                        // NO
-                        if (confirm == '2')
-                        {
-                            break;
-                        }
-                    }
-                }
             }
-
-            // Update only the timer while waiting for input.
-            displayTimer(getUnansweredCount(history));
-
-            Sleep(100);
         }
     }
 }
+
 
 // ============================================================
 // START QUIZ
@@ -850,7 +814,9 @@ void QuizSession::startQuiz()
 {
     clearTerminal();
 
+
     int numberOfQuestions;
+
 
     cout << "========================================\n";
 
@@ -858,7 +824,9 @@ void QuizSession::startQuiz()
 
     cout << "========================================\n\n";
 
+
     cout << "Enter number of questions: ";
+
 
     while (!(cin >> numberOfQuestions) ||
            numberOfQuestions < 1 ||
@@ -866,20 +834,24 @@ void QuizSession::startQuiz()
     {
         cin.clear();
 
+
         cin.ignore(
             numeric_limits<streamsize>::max(),
             '\n'
         );
+
 
         cout << "\nInvalid number!\n";
 
         cout << "Enter again: ";
     }
 
+
     cin.ignore(
         numeric_limits<streamsize>::max(),
         '\n'
     );
+
 
     // ================================================
     // RESET
@@ -891,11 +863,13 @@ void QuizSession::startQuiz()
 
     wrongWords.clear();
 
+
     // ================================================
     // SHUFFLE
     // ================================================
 
     shuffleWords();
+
 
     // ================================================
     // CREATE QUESTIONS
@@ -905,11 +879,13 @@ void QuizSession::startQuiz()
         numberOfQuestions
     );
 
+
     // ================================================
     // CREATE HISTORY
     // ================================================
 
     history.clear();
+
 
     for (int i = 0;
          i < numberOfQuestions;
@@ -917,32 +893,30 @@ void QuizSession::startQuiz()
     {
         QuizHistory item;
 
+
         item.word =
             questions[i].getWord();
+
 
         item.userAnswer =
             '-';
 
+
         item.correctAnswer =
             questions[i].getCorrectAnswer();
+
 
         item.answered =
             false;
 
+
         item.isCorrect =
             false;
+
 
         history.push_back(item);
     }
 
-    // ================================================
-    // START TIMER
-    // ================================================
-
-    // Each question gets 90 seconds (1 minute 30 seconds).
-    quizEndTime =
-        GetTickCount64() +
-        ((ULONGLONG)numberOfQuestions * 90ULL * 1000ULL);
 
     // ================================================
     // CLEAR TERMINAL
@@ -950,12 +924,14 @@ void QuizSession::startQuiz()
 
     clearTerminal();
 
+
     // ================================================
     // START QUIZ
     // ================================================
 
     runQuiz();
 }
+
 
 // ============================================================
 // SHOW RESULT
@@ -966,6 +942,7 @@ void QuizSession::showResult()
     score = 0;
 
     wrongWords.clear();
+
 
     // ================================================
     // CALCULATE SCORE
@@ -988,6 +965,7 @@ void QuizSession::showResult()
         }
     }
 
+
     // ================================================
     // RESULT HEADER
     // ================================================
@@ -998,11 +976,13 @@ void QuizSession::showResult()
 
     cout << "========================================\n\n";
 
+
     cout << "Score: "
          << score
          << "/"
          << history.size()
          << "\n\n";
+
 
     // ================================================
     // DETAILS
@@ -1014,6 +994,7 @@ void QuizSession::showResult()
 
     cout << "----------------------------------------\n\n";
 
+
     for (int i = 0;
          i < (int)history.size();
          i++)
@@ -1022,9 +1003,11 @@ void QuizSession::showResult()
              << i + 1
              << ": ";
 
+
         if (history[i].answered)
         {
             cout << history[i].userAnswer;
+
 
             if (history[i].isCorrect)
             {
@@ -1046,8 +1029,10 @@ void QuizSession::showResult()
                  << history[i].correctAnswer;
         }
 
+
         cout << "\n";
     }
+
 
     // ================================================
     // SUMMARY
@@ -1059,31 +1044,38 @@ void QuizSession::showResult()
 
     cout << "========================================\n\n";
 
+
     double percentage =
         (double)score /
         history.size() *
         100.0;
 
+
     cout << fixed
          << setprecision(1);
+
 
     cout << "Correct: "
          << score
          << "\n";
 
+
     cout << "Wrong / Unanswered: "
          << history.size() - score
          << "\n";
 
+
     cout << "Percentage: "
          << percentage
          << "%\n";
+
 
     // ================================================
     // RATING
     // ================================================
 
     cout << "\n";
+
 
     if (percentage >= 90)
     {
@@ -1106,6 +1098,7 @@ void QuizSession::showResult()
         cout << "You Need More Practice!\n";
     }
 
+
     // ================================================
     // WORDS TO REVIEW
     // ================================================
@@ -1115,6 +1108,7 @@ void QuizSession::showResult()
     cout << "           WORDS TO REVIEW\n";
 
     cout << "========================================\n\n";
+
 
     if (wrongWords.empty())
     {
