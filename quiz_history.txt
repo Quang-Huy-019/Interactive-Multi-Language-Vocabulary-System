@@ -1,0 +1,637 @@
+============================================================
+                    QUIZ #001
+============================================================
+
+Date: 25/09/2026 17:26
+Total Questions: 5
+Correct: 2
+Wrong: 3
+Unanswered: 0
+Score: 40%
+Time Used: 00:28
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] different
+Your answer: B
+Correct answer: B
+
+[4] friendly
+Your answer: D
+Correct answer: D
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] necessary
+
+Question:
+What does "necessary" mean?
+
+A. dat
+B. can thiet
+C. kho
+D. van de
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] cheap
+
+Question:
+What does "cheap" mean?
+
+A. re
+B. dat
+C. khac nhau
+D. co the
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[5] dangerous
+
+Question:
+What does "dangerous" mean?
+
+A. than thien
+B. thong minh
+C. nguy hiem
+D. thoai mai
+
+Your answer: D
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #002
+============================================================
+
+Date: 25/09/2026 17:38
+Total Questions: 10
+Correct: 2
+Wrong: 8
+Unanswered: 0
+Score: 20%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] possible
+Your answer: A
+Correct answer: A
+
+[5] expensive
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] dangerous
+
+Question:
+What does "dangerous" mean?
+
+A. re
+B. nguy hiem
+C. can thiet
+D. thanh cong
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] friendly
+
+Question:
+What does "friendly" mean?
+
+A. re
+B. can thiet
+C. dat
+D. than thien
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] intelligent
+
+Question:
+What does "intelligent" mean?
+
+A. dep
+B. quan trong
+C. thong minh
+D. nguy hiem
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[6] different
+
+Question:
+What does "different" mean?
+
+A. thong minh
+B. khac nhau
+C. quan trong
+D. dat
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[7] interesting
+
+Question:
+What does "interesting" mean?
+
+A. quan trong
+B. thanh cong
+C. thu vi
+D. can thiet
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[8] important
+
+Question:
+What does "important" mean?
+
+A. thanh cong
+B. re
+C. thoai mai
+D. quan trong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[9] beautiful
+
+Question:
+What does "beautiful" mean?
+
+A. re
+B. dep
+C. co the
+D. thong minh
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[10] problem
+
+Question:
+What does "problem" mean?
+
+A. re
+B. thu vi
+C. thong minh
+D. van de
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #003
+============================================================
+
+Date: 26/09/2026 15:57
+Total Questions: 15
+Correct: 4
+Wrong: 11
+Unanswered: 0
+Score: 27%
+Time Used: 00:14
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] dangerous
+Your answer: A
+Correct answer: A
+
+[3] possible
+Your answer: A
+Correct answer: A
+
+[12] successful
+Your answer: A
+Correct answer: A
+
+[13] problem
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] important
+
+Question:
+What does "important" mean?
+
+A. kho
+B. thong minh
+C. nguy hiem
+D. quan trong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] friendly
+
+Question:
+What does "friendly" mean?
+
+A. thoai mai
+B. thanh cong
+C. than thien
+D. kho
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[5] different
+
+Question:
+What does "different" mean?
+
+A. kho
+B. co the
+C. khac nhau
+D. dep
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[6] interesting
+
+Question:
+What does "interesting" mean?
+
+A. co the
+B. re
+C. thu vi
+D. thanh cong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[7] cheap
+
+Question:
+What does "cheap" mean?
+
+A. thong minh
+B. dep
+C. co the
+D. re
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[8] comfortable
+
+Question:
+What does "comfortable" mean?
+
+A. dep
+B. thong minh
+C. thoai mai
+D. nguy hiem
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[9] necessary
+
+Question:
+What does "necessary" mean?
+
+A. nguy hiem
+B. dat
+C. can thiet
+D. co the
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] difficult
+
+Question:
+What does "difficult" mean?
+
+A. thu vi
+B. thong minh
+C. quan trong
+D. kho
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[11] intelligent
+
+Question:
+What does "intelligent" mean?
+
+A. van de
+B. dep
+C. than thien
+D. thong minh
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[14] expensive
+
+Question:
+What does "expensive" mean?
+
+A. than thien
+B. dat
+C. dep
+D. thoai mai
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[15] beautiful
+
+Question:
+What does "beautiful" mean?
+
+A. re
+B. dep
+C. co the
+D. can thiet
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #004
+============================================================
+
+Date: 26/09/2026 15:59
+Total Questions: 16
+Correct: 3
+Wrong: 13
+Unanswered: 0
+Score: 19%
+Time Used: 00:12
+
+-------------------- CORRECT ANSWERS --------------------
+
+[4] ?????
+Your answer: C
+Correct answer: C
+
+[11] problem
+Your answer: C
+Correct answer: C
+
+[12] possible
+Your answer: C
+Correct answer: C
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] different
+
+Question:
+What does "different" mean?
+
+A. can thiet
+B. thanh cong
+C. khac nhau
+D. ???
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] expensive
+
+Question:
+What does "expensive" mean?
+
+A. van de
+B. dat
+C. thanh cong
+D. co the
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] difficult
+
+Question:
+What does "difficult" mean?
+
+A. thong minh
+B. can thiet
+C. thoai mai
+D. kho
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] important
+
+Question:
+What does "important" mean?
+
+A. thu vi
+B. quan trong
+C. dep
+D. thanh cong
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[6] dangerous
+
+Question:
+What does "dangerous" mean?
+
+A. nguy hiem
+B. kho
+C. thong minh
+D. quan trong
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[7] necessary
+
+Question:
+What does "necessary" mean?
+
+A. co the
+B. can thiet
+C. than thien
+D. thong minh
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[8] beautiful
+
+Question:
+What does "beautiful" mean?
+
+A. co the
+B. dep
+C. thu vi
+D. nguy hiem
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[9] intelligent
+
+Question:
+What does "intelligent" mean?
+
+A. thong minh
+B. ???
+C. re
+D. thoai mai
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[10] cheap
+
+Question:
+What does "cheap" mean?
+
+A. re
+B. quan trong
+C. ???
+D. nguy hiem
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[13] comfortable
+
+Question:
+What does "comfortable" mean?
+
+A. khac nhau
+B. thoai mai
+C. van de
+D. re
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[14] friendly
+
+Question:
+What does "friendly" mean?
+
+A. than thien
+B. quan trong
+C. re
+D. thong minh
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[15] interesting
+
+Question:
+What does "interesting" mean?
+
+A. re
+B. thu vi
+C. khac nhau
+D. dat
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[16] successful
+
+Question:
+What does "successful" mean?
+
+A. thong minh
+B. quan trong
+C. kho
+D. thanh cong
+
+Your answer: C
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
