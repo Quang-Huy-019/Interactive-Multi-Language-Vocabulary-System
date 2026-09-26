@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "quiz.h"
+#include "Dictionary.h"
 
 using namespace std;
 
@@ -134,26 +135,11 @@ int main()
     fullscreen();
 
 
-    vector<Word> words = {
-
-        Word("beautiful", "dep"),
-        Word("difficult", "kho"),
-        Word("important", "quan trong"),
-        Word("successful", "thanh cong"),
-        Word("interesting", "thu vi"),
-        Word("expensive", "dat"),
-        Word("cheap", "re"),
-        Word("dangerous", "nguy hiem"),
-        Word("comfortable", "thoai mai"),
-        Word("intelligent", "thong minh"),
-        Word("friendly", "than thien"),
-        Word("necessary", "can thiet"),
-        Word("possible", "co the"),
-        Word("different", "khac nhau"),
-        Word("problem", "van de")
-
-    };
-
+    // Simulate loading the existing vocabulary successfully at startup.
+    Dictionary dictionary;
+    vector<QuizWord> words;
+    for (Word* word : dictionary.getAllWords())
+        words.emplace_back(word->getEnglish(), word->getVietnamese());
 
     QuizSession quiz(words);
 
@@ -177,11 +163,14 @@ int main()
             << "1. Start Quiz\n";
 
         cout
-            << "2. Exit\n\n";
+            << "2. Quiz History\n";
+
+        cout
+            << "3. Exit\n\n";
 
 
         cout
-            << "Press 1 or 2: ";
+            << "Press 1, 2 or 3: ";
 
 
         char choice = _getch();
@@ -201,6 +190,15 @@ int main()
         case '2':
 
             cout << "2\n";
+
+            QuizHistoryManager::showHistoryMenu();
+
+            break;
+
+
+        case '3':
+
+            cout << "3\n";
 
             cout
                 << "\nThank you for using the system!\n";

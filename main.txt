@@ -177,11 +177,14 @@ int main()
             << "1. Start Quiz\n";
 
         cout
-            << "2. Exit\n\n";
+            << "2. Quiz History\n";
+
+        cout
+            << "3. Exit\n\n";
 
 
         cout
-            << "Press 1 or 2: ";
+            << "Press 1, 2 or 3: ";
 
 
         char choice = _getch();
@@ -201,6 +204,15 @@ int main()
         case '2':
 
             cout << "2\n";
+
+            QuizHistoryManager::showHistoryMenu();
+
+            break;
+
+
+        case '3':
+
+            cout << "3\n";
 
             cout
                 << "\nThank you for using the system!\n";

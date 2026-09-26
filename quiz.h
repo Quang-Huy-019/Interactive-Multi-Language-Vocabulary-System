@@ -3,35 +3,22 @@
 
 #include <string>
 #include <vector>
+#include <windows.h>
+#include "Word.h"
 
-
-// ============================================================
-// CLASS WORD
-// ============================================================
-
-class Word
-{
-private:
-
+struct QuizWord {
     std::string english;
     std::string vietnamese;
-
-
-public:
-
-    Word();
-
-    Word(
-        std::string en,
-        std::string vi
-    );
-
-
-    std::string getEnglish() const;
-
-    std::string getVietnamese() const;
+    QuizWord() = default;
+    QuizWord(std::string en, std::string vi) : english(en), vietnamese(vi) {}
+    std::string getEnglish() const { return english; }
+    std::string getVietnamese() const { return vietnamese; }
 };
 
+
+// ============================================================
+// QUIZ VIEW OF A WORD (adapted from the dictionary's Word hierarchy)
+// ============================================================
 
 // ============================================================
 // CLASS QUESTION
@@ -41,7 +28,7 @@ class Question
 {
 private:
 
-    Word word;
+    QuizWord word;
 
     std::vector<std::string> options;
 
@@ -51,7 +38,7 @@ private:
 public:
 
     Question(
-        Word w,
+        QuizWord w,
         std::vector<std::string> opts,
         int correct
     );
@@ -75,11 +62,15 @@ public:
     std::string getOption(
         int index
     ) const;
+
+    int getOptionsCount() const;
+
+    int getCorrectAnswerIndex() const;
 };
 
 
 // ============================================================
-// QUIZ HISTORY
+// QUIZ HISTORY (ITEM LEVEL)
 // ============================================================
 
 struct QuizHistory
@@ -97,6 +88,77 @@ struct QuizHistory
 
 
 // ============================================================
+// QUIZ ATTEMPT (FILE RECORD LEVEL)
+// ============================================================
+
+struct QuizAttempt
+{
+    int id;
+
+    std::string date;
+
+    int totalQuestions;
+
+    int correct;
+
+    int wrong;
+
+    int unanswered;
+
+    std::string scoreStr;
+
+    std::string timeUsed;
+
+    std::string fullText;
+};
+
+
+// ============================================================
+// QUIZ HISTORY MANAGER
+// ============================================================
+
+class QuizHistoryManager
+{
+public:
+
+    static const std::string HISTORY_FILE;
+
+    static std::string getCurrentDateTime();
+
+    static std::string formatTimeUsed(
+        unsigned long long totalSeconds
+    );
+
+    static std::vector<QuizAttempt> loadAllAttempts(
+        const std::string& filename = HISTORY_FILE
+    );
+
+    static void saveAttempt(
+        const std::string& formattedQuiz,
+        const std::string& filename = HISTORY_FILE
+    );
+
+    static std::string formatQuizAttempt(
+        int quizNumber,
+        const std::string& dateStr,
+        int totalQuestions,
+        int correct,
+        int wrong,
+        int unanswered,
+        const std::string& timeUsed,
+        const std::vector<QuizHistory>& history,
+        const std::vector<Question>& questions
+    );
+
+    static void showHistoryMenu();
+
+    static void viewAllAttempts();
+
+    static void viewLatestAttempt();
+};
+
+
+// ============================================================
 // CLASS QUIZ SESSION
 // ============================================================
 
@@ -104,7 +166,7 @@ class QuizSession
 {
 private:
 
-    std::vector<Word> wordBank;
+    std::vector<QuizWord> wordBank;
 
     std::vector<Question> questions;
 
@@ -115,6 +177,10 @@ private:
     int currentQuestion;
 
     int score;
+
+    ULONGLONG quizStartTime;
+
+    ULONGLONG quizDurationMs;
 
 
     void shuffleWords();
@@ -139,7 +205,7 @@ private:
 public:
 
     QuizSession(
-        std::vector<Word> words
+        std::vector<QuizWord> words
     );
 
     void startQuiz();
