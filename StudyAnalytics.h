@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-// Thông tin thong kê tung tu
+// Thong tin thong ke tung tu
 struct WordStat {
     std::string word;
     std::string meaning;
@@ -18,7 +18,7 @@ struct WordStat {
     double getAccuracy() const;
 };
 
-// Class quan lý phân tích hoc tap
+// Class quan ly phan tich hoc tap
 class StudyAnalytics {
 private:
     std::vector<WordStat> wordList;
