@@ -2,67 +2,63 @@
                     QUIZ #001
 ============================================================
 
-Date: 25/09/2026 17:26
-Total Questions: 5
-Correct: 2
+Date: 03/10/2026 09:03
+Total Questions: 4
+Correct: 1
 Wrong: 3
 Unanswered: 0
-Score: 40%
-Time Used: 00:28
+Score: 25%
+Time Used: 00:13
 
 -------------------- CORRECT ANSWERS --------------------
 
-[2] different
-Your answer: B
-Correct answer: B
-
-[4] friendly
-Your answer: D
-Correct answer: D
+[1] computer
+Your answer: A
+Correct answer: A
 
 --------------------- WRONG ANSWERS ----------------------
 
-[1] necessary
+[2] ring
 
 Question:
-What does "necessary" mean?
+What does "ring" mean?
 
-A. dat
-B. can thiet
-C. kho
-D. van de
+A. m†y t°nh
+B. c†i bÖn
+C. b†nh
+D. nh?n
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] table
+
+Question:
+What does "table" mean?
+
+A. b†nh
+B. c†i bÖn
+C. c†i bÖn
+D. tay
 
 Your answer: A
 Correct answer: B
 
 ----------------------------------------------------------
 
-[3] cheap
+[4] hand
 
 Question:
-What does "cheap" mean?
+What does "hand" mean?
 
-A. re
-B. dat
-C. khac nhau
-D. co the
+A. nh?n
+B. m†y t°nh
+C. tay
+D. c†i bÖn
 
-Your answer: C
-Correct answer: A
-
-----------------------------------------------------------
-
-[5] dangerous
-
-Question:
-What does "dangerous" mean?
-
-A. than thien
-B. thong minh
-C. nguy hiem
-D. thoai mai
-
-Your answer: D
+Your answer: A
 Correct answer: C
 
 ---------------------- END OF QUIZ -----------------------
@@ -72,143 +68,35 @@ Correct answer: C
                     QUIZ #002
 ============================================================
 
-Date: 25/09/2026 17:38
-Total Questions: 10
-Correct: 2
-Wrong: 8
+Date: 03/10/2026 09:03
+Total Questions: 4
+Correct: 4
+Wrong: 0
 Unanswered: 0
-Score: 20%
-Time Used: 00:03
+Score: 100%
+Time Used: 00:19
 
 -------------------- CORRECT ANSWERS --------------------
 
-[1] possible
+[1] computer
+Your answer: B
+Correct answer: B
+
+[2] table
 Your answer: A
 Correct answer: A
 
-[5] expensive
-Your answer: A
-Correct answer: A
+[3] ring
+Your answer: C
+Correct answer: C
+
+[4] hand
+Your answer: B
+Correct answer: B
 
 --------------------- WRONG ANSWERS ----------------------
 
-[2] dangerous
-
-Question:
-What does "dangerous" mean?
-
-A. re
-B. nguy hiem
-C. can thiet
-D. thanh cong
-
-Your answer: A
-Correct answer: B
-
-----------------------------------------------------------
-
-[3] friendly
-
-Question:
-What does "friendly" mean?
-
-A. re
-B. can thiet
-C. dat
-D. than thien
-
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[4] intelligent
-
-Question:
-What does "intelligent" mean?
-
-A. dep
-B. quan trong
-C. thong minh
-D. nguy hiem
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[6] different
-
-Question:
-What does "different" mean?
-
-A. thong minh
-B. khac nhau
-C. quan trong
-D. dat
-
-Your answer: A
-Correct answer: B
-
-----------------------------------------------------------
-
-[7] interesting
-
-Question:
-What does "interesting" mean?
-
-A. quan trong
-B. thanh cong
-C. thu vi
-D. can thiet
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[8] important
-
-Question:
-What does "important" mean?
-
-A. thanh cong
-B. re
-C. thoai mai
-D. quan trong
-
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[9] beautiful
-
-Question:
-What does "beautiful" mean?
-
-A. re
-B. dep
-C. co the
-D. thong minh
-
-Your answer: A
-Correct answer: B
-
-----------------------------------------------------------
-
-[10] problem
-
-Question:
-What does "problem" mean?
-
-A. re
-B. thu vi
-C. thong minh
-D. van de
-
-Your answer: A
-Correct answer: D
+No wrong answers.
 
 ---------------------- END OF QUIZ -----------------------
 
@@ -217,196 +105,42 @@ Correct answer: D
                     QUIZ #003
 ============================================================
 
-Date: 26/09/2026 15:57
-Total Questions: 15
-Correct: 4
-Wrong: 11
+Date: 03/10/2026 09:31
+Total Questions: 4
+Correct: 3
+Wrong: 1
 Unanswered: 0
-Score: 27%
-Time Used: 00:14
+Score: 75%
+Time Used: 00:16
 
 -------------------- CORRECT ANSWERS --------------------
 
-[1] dangerous
+[1] computer
 Your answer: A
 Correct answer: A
 
-[3] possible
-Your answer: A
-Correct answer: A
+[3] hand
+Your answer: B
+Correct answer: B
 
-[12] successful
-Your answer: A
-Correct answer: A
-
-[13] problem
-Your answer: A
-Correct answer: A
+[4] phone
+Your answer: D
+Correct answer: D
 
 --------------------- WRONG ANSWERS ----------------------
 
-[2] important
+[2] 3
 
 Question:
-What does "important" mean?
+What does "3" mean?
 
-A. kho
-B. thong minh
-C. nguy hiem
-D. quan trong
+A. c†i bÖn
+B. b†nh
+C.         viToEngMap.erase(w->getVietnamese()); 
+D. tay
 
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[4] friendly
-
-Question:
-What does "friendly" mean?
-
-A. thoai mai
-B. thanh cong
-C. than thien
-D. kho
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[5] different
-
-Question:
-What does "different" mean?
-
-A. kho
-B. co the
-C. khac nhau
-D. dep
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[6] interesting
-
-Question:
-What does "interesting" mean?
-
-A. co the
-B. re
-C. thu vi
-D. thanh cong
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[7] cheap
-
-Question:
-What does "cheap" mean?
-
-A. thong minh
-B. dep
-C. co the
-D. re
-
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[8] comfortable
-
-Question:
-What does "comfortable" mean?
-
-A. dep
-B. thong minh
-C. thoai mai
-D. nguy hiem
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[9] necessary
-
-Question:
-What does "necessary" mean?
-
-A. nguy hiem
-B. dat
-C. can thiet
-D. co the
-
-Your answer: A
-Correct answer: C
-
-----------------------------------------------------------
-
-[10] difficult
-
-Question:
-What does "difficult" mean?
-
-A. thu vi
-B. thong minh
-C. quan trong
-D. kho
-
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[11] intelligent
-
-Question:
-What does "intelligent" mean?
-
-A. van de
-B. dep
-C. than thien
-D. thong minh
-
-Your answer: A
-Correct answer: D
-
-----------------------------------------------------------
-
-[14] expensive
-
-Question:
-What does "expensive" mean?
-
-A. than thien
-B. dat
-C. dep
-D. thoai mai
-
-Your answer: A
-Correct answer: B
-
-----------------------------------------------------------
-
-[15] beautiful
-
-Question:
-What does "beautiful" mean?
-
-A. re
-B. dep
-C. co the
-D. can thiet
-
-Your answer: A
-Correct answer: B
+Your answer: C
+Correct answer: A
 
 ---------------------- END OF QUIZ -----------------------
 
@@ -415,222 +149,4827 @@ Correct answer: B
                     QUIZ #004
 ============================================================
 
-Date: 26/09/2026 15:59
-Total Questions: 16
-Correct: 3
-Wrong: 13
+Date: 03/10/2026 10:03
+Total Questions: 5
+Correct: 5
+Wrong: 0
 Unanswered: 0
-Score: 19%
+Score: 100%
+Time Used: 00:15
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] actor
+Your answer: B
+Correct answer: B
+
+[2] airline
+Your answer: A
+Correct answer: A
+
+[3] body
+Your answer: A
+Correct answer: A
+
+[4] bloom
+Your answer: A
+Correct answer: A
+
+[5] blend
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+No wrong answers.
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #005
+============================================================
+
+Date: 03/10/2026 10:03
+Total Questions: 5
+Correct: 2
+Wrong: 3
+Unanswered: 0
+Score: 40%
+Time Used: 00:06
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] affect
+Your answer: A
+Correct answer: A
+
+[5] blame
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] brief
+
+Question:
+What does "brief" mean?
+
+A. lam phien
+B. ngan gon
+C. khang dinh
+D. chan
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] assault
+
+Question:
+What does "assault" mean?
+
+A. ngan sach
+B. con gau
+C. tan cong
+D. xuat hien
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] amaze
+
+Question:
+What does "amaze" mean?
+
+A. can
+B. cach xa
+C. dien vien nam
+D. lam ngac nhien
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #006
+============================================================
+
+Date: 03/10/2026 10:04
+Total Questions: 7
+Correct: 1
+Wrong: 6
+Unanswered: 0
+Score: 14%
 Time Used: 00:12
 
 -------------------- CORRECT ANSWERS --------------------
 
-[4] ?????
-Your answer: C
-Correct answer: C
-
-[11] problem
-Your answer: C
-Correct answer: C
-
-[12] possible
+[3] brick
 Your answer: C
 Correct answer: C
 
 --------------------- WRONG ANSWERS ----------------------
 
-[1] different
+[1] bone
 
 Question:
-What does "different" mean?
+What does "bone" mean?
 
-A. can thiet
-B. thanh cong
-C. khac nhau
-D. ???
+A. tan cong
+B. quan bar
+C. bu long
+D. xuong
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] attempt
+
+Question:
+What does "attempt" mean?
+
+A. mau xanh
+B. cai hop
+C. co gang
+D. vinh
 
 Your answer: A
 Correct answer: C
 
 ----------------------------------------------------------
 
-[2] expensive
+[4] album
 
 Question:
-What does "expensive" mean?
+What does "album" mean?
 
-A. van de
-B. dat
-C. thanh cong
-D. co the
+A. tham du
+B. mang internet
+C. tap album
+D. qua tao
 
-Your answer: A
-Correct answer: B
+Your answer: B
+Correct answer: C
 
 ----------------------------------------------------------
 
-[3] difficult
+[5] advice
 
 Question:
-What does "difficult" mean?
+What does "advice" mean?
 
-A. thong minh
-B. can thiet
-C. thoai mai
-D. kho
+A. bia
+B. hanh vi
+C. chay
+D. loi khuyen
 
 Your answer: A
 Correct answer: D
 
 ----------------------------------------------------------
 
-[5] important
+[6] browser
 
 Question:
-What does "important" mean?
+What does "browser" mean?
 
-A. thu vi
-B. quan trong
-C. dep
-D. thanh cong
+A. hanh vi
+B. trinh duyet
+C. con gau
+D. tai khoan
 
 Your answer: C
 Correct answer: B
 
 ----------------------------------------------------------
 
-[6] dangerous
+[7] bus
 
 Question:
-What does "dangerous" mean?
+What does "bus" mean?
 
-A. nguy hiem
-B. kho
-C. thong minh
+A. xe buyt
+B. thay mat
+C. ghe dai
+D. lam phien
+
+Your answer: B
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #007
+============================================================
+
+Date: 03/10/2026 10:04
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:21
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] alpha
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] adapt
+
+Question:
+What does "adapt" mean?
+
+A. quan doi
+B. quan bar
+C. thich nghi
+D. thuong
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] bridge
+
+Question:
+What does "bridge" mean?
+
+A. su gian du
+B. cay cau
+C. ngan hang
+D. tac gia
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] begin
+
+Question:
+What does "begin" mean?
+
+A. bat dau
+B. vung dem
+C. buoc
+D. noi them
+
+Your answer: B
+Correct answer: A
+
+----------------------------------------------------------
+
+[5] border
+
+Question:
+What does "border" mean?
+
+A. bien gioi
+B. thit bo
+C. bai bao
+D. cach xa
+
+Your answer: C
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #008
+============================================================
+
+Date: 12/10/2026 18:49
+Total Questions: 5
+Correct: 4
+Wrong: 1
+Unanswered: 0
+Score: 80%
+Time Used: 00:20
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] blog
+Your answer: C
+Correct answer: C
+
+[3] archive
+Your answer: A
+Correct answer: A
+
+[4] blonde
+Your answer: C
+Correct answer: C
+
+[5] behind
+Your answer: D
+Correct answer: D
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] beat
+
+Question:
+What does "beat" mean?
+
+A. trang blog
+B. danh
+C. den
+D. sang
+
+Your answer: D
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #009
+============================================================
+
+Date: 12/10/2026 18:52
+Total Questions: 10
+Correct: 4
+Wrong: 6
+Unanswered: 0
+Score: 40%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] account
+Your answer: A
+Correct answer: A
+
+[2] agent
+Your answer: A
+Correct answer: A
+
+[3] assess
+Your answer: A
+Correct answer: A
+
+[8] assume
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[4] boat
+
+Question:
+What does "boat" mean?
+
+A. ngan gon
+B. cai giuong
+C. thuyen
+D. ruou
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[5] boost
+
+Question:
+What does "boost" mean?
+
+A. giong
+B. phan cong
+C. thuc day
+D. ngan hang
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[6] variable
+
+Question:
+What does "variable" mean?
+
+A. xung quanh
+B. chuong trinh
+C. cau xin
+D. bien so
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[7] beam
+
+Question:
+What does "beam" mean?
+
+A. ngan sach
+B. chum tia
+C. banh mi
+D. chuc phuc
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[9] beauty
+
+Question:
+What does "beauty" mean?
+
+A. cai chai
+B. kinh doanh
+C. ve dep
+D. chinh xac
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] animal
+
+Question:
+What does "animal" mean?
+
+A. loi ich
+B. dong vat
+C. ruou
+D. thuc day
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #010
+============================================================
+
+Date: 12/10/2026 18:53
+Total Questions: 20
+Correct: 3
+Wrong: 17
+Unanswered: 0
+Score: 15%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+[8] advice
+Your answer: A
+Correct answer: A
+
+[14] band
+Your answer: A
+Correct answer: A
+
+[18] assault
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] bug
+
+Question:
+What does "bug" mean?
+
+A. con gau
+B. danh gia
+C. loi phan mem
+D. thit bo
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] bless
+
+Question:
+What does "bless" mean?
+
+A. khoi
+B. chuc phuc
+C. bu long
+D. mang
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] blind
+
+Question:
+What does "blind" mean?
+
+A. luu tru
+B. dam
+C. mu
+D. chay
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] better
+
+Question:
+What does "better" mean?
+
+A. su vang mat
+B. tot hon
+C. bat dau
+D. phan cong
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] argue
+
+Question:
+What does "argue" mean?
+
+A. sap xep
+B. tranh luan
+C. thai do
+D. cach xa
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[6] attempt
+
+Question:
+What does "attempt" mean?
+
+A. so luong
+B. giai thuong
+C. co gang
+D. nuoc
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[7] agent
+
+Question:
+What does "agent" mean?
+
+A. su gian du
+B. tac nhan
+C. so luong
+D. su vang mat
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[9] attitude
+
+Question:
+What does "attitude" mean?
+
+A. tot nhat
+B. mau xanh
+C. thai do
+D. khang cao
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] bed
+
+Question:
+What does "bed" mean?
+
+A. nhan thuc
+B. cai giuong
+C. phat sinh
+D. bia
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[11] amaze
+
+Question:
+What does "amaze" mean?
+
+A. da
+B. trong
+C. khan gia
+D. lam ngac nhien
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[12] blog
+
+Question:
+What does "blog" mean?
+
+A. luu tru
+B. banh mi
+C. loi xin loi
+D. trang blog
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[13] server
+
+Question:
+What does "server" mean?
+
+A. lien ket
+B. bo nhiem
+C. may chu
+D. sinh
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[15] border
+
+Question:
+What does "border" mean?
+
+A. bat dau
+B. bien gioi
+C. thit bo
+D. truoc
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[16] airline
+
+Question:
+What does "airline" mean?
+
+A. tham vong
+B. qua tao
+C. may tinh
+D. hang hang khong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[17] bare
+
+Question:
+What does "bare" mean?
+
+A. mang
+B. trui lui
+C. buoc
+D. bao mat
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[19] bee
+
+Question:
+What does "bee" mean?
+
+A. tot hon
+B. mang luoi
+C. con ong
+D. chum
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[20] boil
+
+Question:
+What does "boil" mean?
+
+A. tai khoan
+B. su them an
+C. dun soi
+D. qua mong
+
+Your answer: A
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #011
+============================================================
+
+Date: 12/10/2026 18:59
+Total Questions: 20
+Correct: 5
+Wrong: 15
+Unanswered: 0
+Score: 25%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[4] bed
+Your answer: A
+Correct answer: A
+
+[8] alter
+Your answer: A
+Correct answer: A
+
+[10] blog
+Your answer: A
+Correct answer: A
+
+[16] bench
+Your answer: A
+Correct answer: A
+
+[19] blue
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] bee
+
+Question:
+What does "bee" mean?
+
+A. tien len
+B. con ong
+C. banh mi
+D. quan tri vien
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] basis
+
+Question:
+What does "basis" mean?
+
+A. tham vong
+B. mu
+C. phat sinh
+D. nen tang
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] block
+
+Question:
+What does "block" mean?
+
+A. hoat dong
+B. mui ten
+C. can bang
+D. khoi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] award
+
+Question:
+What does "award" mean?
+
+A. tro thanh
+B. phan cong
+C. giai thuong
+D. phe duyet
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[6] balcony
+
+Question:
+What does "balcony" mean?
+
+A. mua thu
+B. su lo au
+C. nghe si
+D. ban cong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[7] avatar
+
+Question:
+What does "avatar" mean?
+
+A. gan nang
+B. anh dai dien
+C. mac ca
+D. noi them
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[9] box
+
+Question:
+What does "box" mean?
+
+A. phan cong
+B. cai hop
+C. mu
+D. nhi phan
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[11] audit
+
+Question:
+What does "audit" mean?
+
+A. thu duoc
+B. kiem toan
+C. nhi phan
+D. rong
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[12] accident
+
+Question:
+What does "accident" mean?
+
+A. mang
+B. tranh
+C. tai n·∫°n
+D. cai gio
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[13] arise
+
+Question:
+What does "arise" mean?
+
+A. phia truoc
+B. rong
+C. phat sinh
+D. phat song
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[14] account
+
+Question:
+What does "account" mean?
+
+A. truoc
+B. song
+C. tai khoan
+D. dam bao
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[15] armed
+
+Question:
+What does "armed" mean?
+
+A. dau gia
+B. thu duoc
+C. dun soi
+D. co v≈© trang
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[17] appeal
+
+Question:
+What does "appeal" mean?
+
+A. vien dan
+B. khang cao
+C. con cho
+D. nang luc
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[18] army
+
+Question:
+What does "army" mean?
+
+A. sinh
+B. phuong phap
+C. ben canh
+D. quan doi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[20] amaze
+
+Question:
+What does "amaze" mean?
+
+A. cai xo
+B. lam ngac nhien
+C. ang ten
+D. hau nhu
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #012
+============================================================
+
+Date: 12/10/2026 19:08
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[4] band
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] behind
+
+Question:
+What does "behind" mean?
+
+A. vung dem
+B. phia sau
+C. dong y
+D. bang
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] athlete
+
+Question:
+What does "athlete" mean?
+
+A. ap dung
+B. thuong hieu
+C. van dong vien
+D. co so
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] brief
+
+Question:
+What does "brief" mean?
+
+A. do loi
+B. ngan gon
+C. tranh luan
+D. truong hoc
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] box
+
+Question:
+What does "box" mean?
+
+A. loi ich
+B. cai hop
+C. gioi han
+D. nguoi mua
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #013
+============================================================
+
+Date: 12/10/2026 19:08
+Total Questions: 20
+Correct: 11
+Wrong: 9
+Unanswered: 0
+Score: 55%
+Time Used: 00:02
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] archive
+Your answer: A
+Correct answer: A
+
+[3] attract
+Your answer: A
+Correct answer: A
+
+[4] admin
+Your answer: A
+Correct answer: A
+
+[6] analysis
+Your answer: A
+Correct answer: A
+
+[9] body
+Your answer: A
+Correct answer: A
+
+[12] cat
+Your answer: A
+Correct answer: A
+
+[13] alive
+Your answer: A
+Correct answer: A
+
+[14] barrier
+Your answer: A
+Correct answer: A
+
+[15] benefit
+Your answer: A
+Correct answer: A
+
+[18] broadcast
+Your answer: A
+Correct answer: A
+
+[19] accident
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] almost
+
+Question:
+What does "almost" mean?
+
+A. anh em trai
+B. hau nhu
+C. giong
+D. thuc day
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] bottle
+
+Question:
+What does "bottle" mean?
+
+A. tho
+B. bien gioi
+C. co so du lieu
+D. cai chai
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[7] bread
+
+Question:
+What does "bread" mean?
+
+A. sinh
+B. bai bien
+C. su lo au
+D. banh mi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[8] bay
+
+Question:
+What does "bay" mean?
+
+A. cho phep
+B. sang
+C. vinh
+D. cai xo
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] attend
+
+Question:
+What does "attend" mean?
+
+A. su them an
+B. tuyet voi
+C. goc
+D. tham du
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[11] battle
+
+Question:
+What does "battle" mean?
+
+A. ban cong
+B. xe buyt
+C. su gian du
+D. tran chien
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[16] aware
+
+Question:
+What does "aware" mean?
+
+A. xung quanh
+B. tra loi
+C. bui cay
+D. nhan thuc
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[17] attempt
+
+Question:
+What does "attempt" mean?
+
+A. bien so
+B. cai giuong
+C. sinh
+D. co gang
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[20] bank
+
+Question:
+What does "bank" mean?
+
+A. nghe si
+B. ngan hang
+C. qua tao
+D. dien vien nam
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #014
+============================================================
+
+Date: 19/10/2026 08:55
+Total Questions: 5
+Correct: 0
+Wrong: 5
+Unanswered: 0
+Score: 0%
+Time Used: 00:06
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] bound
+
+Question:
+What does "bound" mean?
+
+A. bui cay
+B. khang dinh
+C. may tinh
+D. gioi han
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] allow
+
+Question:
+What does "allow" mean?
+
+A. buoc
+B. can dam
+C. noi them
+D. cho phep
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] bend
+
+Question:
+What does "bend" mean?
+
+A. nut bam
+B. do loi
+C. pha tron
+D. be cong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] brush
+
+Question:
+What does "brush" mean?
+
+A. dat duoc
+B. niem tin
+C. rao can
+D. cai choi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] anger
+
+Question:
+What does "anger" mean?
+
+A. nguoi lon
+B. su gian du
+C. mot chut
+D. co so du lieu
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #015
+============================================================
+
+Date: 19/10/2026 08:56
+Total Questions: 20
+Correct: 7
+Wrong: 13
+Unanswered: 0
+Score: 35%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] antenna
+Your answer: A
+Correct answer: A
+
+[3] bit
+Your answer: A
+Correct answer: A
+
+[7] action
+Your answer: A
+Correct answer: A
+
+[10] bounce
+Your answer: A
+Correct answer: A
+
+[13] bush
+Your answer: A
+Correct answer: A
+
+[15] brief
+Your answer: A
+Correct answer: A
+
+[16] behavior
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] server
+
+Question:
+What does "server" mean?
+
+A. su lo au
+B. may chu
+C. tranh
+D. thuoc ve
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] bonus
+
+Question:
+What does "bonus" mean?
+
+A. ban cong
+B. thuong
+C. tra loi
+D. may tinh
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] buyer
+
+Question:
+What does "buyer" mean?
+
+A. cau xin
+B. nguoi mua
+C. bao thuc
+D. su them an
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[6] bond
+
+Question:
+What does "bond" mean?
+
+A. nen tang
+B. chum tia
+C. phe duyet
+D. lien ket
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[8] blind
+
+Question:
+What does "blind" mean?
+
+A. can dam
+B. bang
+C. mu
+D. su lo au
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[9] appoint
+
+Question:
+What does "appoint" mean?
+
+A. thai do
+B. cai gio
+C. bo nhiem
+D. sinh hoc
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[11] answer
+
+Question:
+What does "answer" mean?
+
+A. tac nhan
+B. co v≈© trang
+C. dang
+D. tra loi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[12] approach
+
+Question:
+What does "approach" mean?
+
+A. bao thuc
+B. phuong phap
+C. gia su
+D. bat giu
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[14] ability
+
+Question:
+What does "ability" mean?
+
+A. bo nao
+B. mau nau
+C. nang luc
+D. khia canh
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[17] album
+
+Question:
+What does "album" mean?
+
+A. qua tao
+B. tap album
+C. bang
+D. that lung
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[18] agent
+
+Question:
+What does "agent" mean?
+
+A. loi ich
+B. tac nhan
+C. nhi phan
+D. xung quanh
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[19] ancient
+
+Question:
+What does "ancient" mean?
+
+A. cai giuong
+B. ban cong
+C. co xua
+D. phan cong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[20] admin
+
+Question:
+What does "admin" mean?
+
+A. thuat toan
+B. quan tri vien
+C. chan
+D. cai xo
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #016
+============================================================
+
+Date: 19/10/2026 09:20
+Total Questions: 11
+Correct: 1
+Wrong: 10
+Unanswered: 0
+Score: 9%
+Time Used: 00:09
+
+-------------------- CORRECT ANSWERS --------------------
+
+[9] bloom
+Your answer: D
+Correct answer: D
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] alone
+
+Question:
+What does "alone" mean?
+
+A. mot minh
+B. can bang
+C. mang luoi
+D. luoi dao
+
+Your answer: B
+Correct answer: A
+
+----------------------------------------------------------
+
+[2] beat
+
+Question:
+What does "beat" mean?
+
+A. thuoc ve
+B. byte
+C. ngat
+D. danh
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] bug
+
+Question:
+What does "bug" mean?
+
+A. no hoa
+B. loi phan mem
+C. sang
+D. luoi dao
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] byte
+
+Question:
+What does "byte" mean?
+
+A. byte
+B. bia
+C. danh
+D. no hoa
+
+Your answer: D
+Correct answer: A
+
+----------------------------------------------------------
+
+[5] belong
+
+Question:
+What does "belong" mean?
+
+A. danh
+B. sang
+C. bia
+D. thuoc ve
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[6] balance
+
+Question:
+What does "balance" mean?
+
+A. byte
+B. loi phan mem
+C. mot minh
+D. can bang
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[7] average
+
+Question:
+What does "average" mean?
+
+A. trung binh
+B. can bang
+C. mot minh
+D. mang luoi
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[8] network
+
+Question:
+What does "network" mean?
+
+A. mang luoi
+B. trung binh
+C. sang
+D. nhan tao
+
+Your answer: D
+Correct answer: A
+
+----------------------------------------------------------
+
+[10] beer
+
+Question:
+What does "beer" mean?
+
+A. bia
+B. can bang
+C. thuoc ve
+D. mot minh
+
+Your answer: D
+Correct answer: A
+
+----------------------------------------------------------
+
+[11] moon
+
+Question:
+What does "moon" mean?
+
+A. trung binh
+B. mat trang
+C. mang luoi
+D. danh
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #017
+============================================================
+
+Date: 19/10/2026 09:20
+Total Questions: 10
+Correct: 1
+Wrong: 9
+Unanswered: 0
+Score: 10%
+Time Used: 00:02
+
+-------------------- CORRECT ANSWERS --------------------
+
+[7] bed
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] bench
+
+Question:
+What does "bench" mean?
+
+A. trang blog
+B. luu tru
+C. cai giuong
+D. ghe dai
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] benefit
+
+Question:
+What does "benefit" mean?
+
+A. mau xanh
+B. luu tru
+C. hanh dong
+D. loi ich
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] blue
+
+Question:
+What does "blue" mean?
+
+A. thu hut
+B. trang blog
+C. mau xanh
+D. cai giuong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] action
+
+Question:
+What does "action" mean?
+
+A. ghe dai
+B. hanh dong
+C. mau xanh
+D. thu hut
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] attract
+
+Question:
+What does "attract" mean?
+
+A. mau xanh
+B. thay doi
+C. thu hut
+D. luu tru
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[6] archive
+
+Question:
+What does "archive" mean?
+
+A. hanh dong
+B. ghe dai
+C. luu tru
+D. cai giuong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[8] alter
+
+Question:
+What does "alter" mean?
+
+A. thu hut
+B. phat song
+C. thay doi
+D. cai giuong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[9] blog
+
+Question:
+What does "blog" mean?
+
+A. hanh dong
+B. mau xanh
+C. trang blog
+D. luu tru
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] broadcast
+
+Question:
+What does "broadcast" mean?
+
+A. thu hut
+B. loi ich
+C. phat song
+D. hanh dong
+
+Your answer: A
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #018
+============================================================
+
+Date: 20/10/2026 09:56
+Total Questions: 10
+Correct: 4
+Wrong: 6
+Unanswered: 0
+Score: 40%
+Time Used: 00:07
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] center
+Your answer: A
+Correct answer: A
+
+[2] invite
+Your answer: A
+Correct answer: A
+
+[9] appetite
+Your answer: A
+Correct answer: A
+
+[10] basket
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[3] hat
+
+Question:
+What does "hat" mean?
+
+A. cung cap
+B. phan cung
+C. xuat chung
+D. mu
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] nurse
+
+Question:
+What does "nurse" mean?
+
+A. da
+B. giau
+C. y ta
+D. hanh ly
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[5] imagine
+
+Question:
+What does "imagine" mean?
+
+A. da
+B. tuong tuong
+C. bo bien
+D. do choi
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[6] deal
+
+Question:
+What does "deal" mean?
+
+A. ban lam viec
+B. thoa thuan
+C. o dau do
+D. ngay mai
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[7] security
+
+Question:
+What does "security" mean?
+
+A. giai quyet
+B. bao mat
+C. may anh
+D. con bo cai
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[8] plan
+
+Question:
+What does "plan" mean?
+
+A. hanh dong
+B. ke hoach
+C. niem tin
+D. no tung
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #019
+============================================================
+
+Date: 20/10/2026 12:58
+Total Questions: 2
+Correct: 1
+Wrong: 1
+Unanswered: 0
+Score: 50%
+Time Used: 02:22
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] glove
+Your answer: D
+Correct answer: D
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] check
+
+Question:
+What does "check" mean?
+
+A. di bo
+B. kiem tra
+C. co ban
+D. di cung
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #020
+============================================================
+
+Date: 20/10/2026 13:10
+Total Questions: 12
+Correct: 3
+Wrong: 9
+Unanswered: 0
+Score: 25%
+Time Used: 00:07
+
+-------------------- CORRECT ANSWERS --------------------
+
+[3] tall
+Your answer: A
+Correct answer: A
+
+[11] station
+Your answer: A
+Correct answer: A
+
+[12] reject
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] slide
+
+Question:
+What does "slide" mean?
+
+A. khoe manh
+B. muon
+C. truot
+D. mieng
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] rich
+
+Question:
+What does "rich" mean?
+
+A. phe duyet
+B. nem
+C. giau
+D. guong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] toss
+
+Question:
+What does "toss" mean?
+
+A. ga
+B. ben ngoai
+C. tung
+D. pin
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[5] turtle
+
+Question:
+What does "turtle" mean?
+
+A. mot minh
+B. song sot
+C. bua toi
+D. con rua
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[6] evening
+
+Question:
+What does "evening" mean?
+
+A. nhan thuc
+B. ghi chu
+C. buoi toi
+D. am thanh
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[7] envelope
+
+Question:
+What does "envelope" mean?
+
+A. giay
+B. toc vang
+C. phong bi
 D. quan trong
 
-Your answer: C
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[8] wait
+
+Question:
+What does "wait" mean?
+
+A. doi
+B. anh hung
+C. tap trung
+D. cho
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[9] meet
+
+Question:
+What does "meet" mean?
+
+A. nghe si
+B. di cung
+C. gap
+D. dat duoc
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[10] list
+
+Question:
+What does "list" mean?
+
+A. giay phep
+B. tu dong
+C. danh sach
+D. danh bong
+
+Your answer: A
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #021
+============================================================
+
+Date: 20/10/2026 13:21
+Total Questions: 3
+Correct: 0
+Wrong: 1
+Unanswered: 2
+Score: 0%
+Time Used: 04:30
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] airline
+
+Question:
+What does "airline" mean?
+
+A. vui ve
+B. hang hang khong
+C. chung minh
+D. bay
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] warm
+
+Question:
+What does "warm" mean?
+
+A. lam sach
+B. con ran
+C. hat
+D. am
+
+Your answer: (Not answered)
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] chapter
+
+Question:
+What does "chapter" mean?
+
+A. thuc te
+B. chuong
+C. khoa hoc
+D. cai chai
+
+Your answer: (Not answered)
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #022
+============================================================
+
+Date: 20/10/2026 13:49
+Total Questions: 2
+Correct: 0
+Wrong: 0
+Unanswered: 2
+Score: 0%
+Time Used: 03:00
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] relation
+
+Question:
+What does "relation" mean?
+
+A. moi quan he
+B. bua trua
+C. anh hung
+D. mua thu
+
+Your answer: (Not answered)
 Correct answer: A
 
 ----------------------------------------------------------
 
-[7] necessary
+[2] hat
 
 Question:
-What does "necessary" mean?
+What does "hat" mean?
 
-A. co the
-B. can thiet
-C. than thien
+A. no tung
+B. mu
+C. toi
+D. nang
+
+Your answer: (Not answered)
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #023
+============================================================
+
+Date: 20/10/2026 15:15
+Total Questions: 3
+Correct: 1
+Wrong: 2
+Unanswered: 0
+Score: 33%
+Time Used: 00:08
+
+-------------------- CORRECT ANSWERS --------------------
+
+[3] book
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] sand
+
+Question:
+What does "sand" mean?
+
+A. dung lai
+B. chung minh
+C. cat
+D. xa hoi
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] waste
+
+Question:
+What does "waste" mean?
+
+A. dat toi
+B. khong gian
+C. thuc day
+D. lang phi
+
+Your answer: B
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #024
+============================================================
+
+Date: 20/10/2026 18:35
+Total Questions: 2
+Correct: 1
+Wrong: 1
+Unanswered: 0
+Score: 50%
+Time Used: 00:09
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] afford
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] water
+
+Question:
+What does "water" mean?
+
+A. con lon
+B. hang xom
+C. nuoc
+D. nghe
+
+Your answer: B
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #025
+============================================================
+
+Date: 20/10/2026 18:36
+Total Questions: 2
+Correct: 0
+Wrong: 2
+Unanswered: 0
+Score: 0%
+Time Used: 00:17
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] answer
+
+Question:
+What does "answer" mean?
+
+A. cuu
+B. trai tim
+C. muon
+D. tra loi
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] damage
+
+Question:
+What does "damage" mean?
+
+A. no
+B. keo dai
+C. hu hong
+D. luat
+
+Your answer: B
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #026
+============================================================
+
+Date: 20/10/2026 19:58
+Total Questions: 1
+Correct: 0
+Wrong: 1
+Unanswered: 0
+Score: 0%
+Time Used: 00:09
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] potato
+
+Question:
+What does "potato" mean?
+
+A. co
+B. khoai tay
+C. phat sinh
+D. choi
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #027
+============================================================
+
+Date: 20/10/2026 19:58
+Total Questions: 2
+Correct: 0
+Wrong: 1
+Unanswered: 1
+Score: 0%
+Time Used: 00:08
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] rain
+
+Question:
+What does "rain" mean?
+
+A. nguy hiem
+B. mua
+C. cai thia
+D. khong noi nao
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] obey
+
+Question:
+What does "obey" mean?
+
+A. mo rong
+B. tuan theo
+C. thuong
+D. vi tien
+
+Your answer: (Not answered)
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #028
+============================================================
+
+Date: 20/10/2026 19:59
+Total Questions: 2
+Correct: 1
+Wrong: 1
+Unanswered: 0
+Score: 50%
+Time Used: 00:15
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] face
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] beauty
+
+Question:
+What does "beauty" mean?
+
+A. huy hieu
+B. ve dep
+C. giam
+D. khoi
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #029
+============================================================
+
+Date: 20/10/2026 20:21
+Total Questions: 3
+Correct: 0
+Wrong: 2
+Unanswered: 1
+Score: 0%
+Time Used: 00:11
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] bring
+
+Question:
+What does "bring" mean?
+
+A. tinh phi
+B. mang
+C. mui ten
+D. phuong tien
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] quickly
+
+Question:
+What does "quickly" mean?
+
+A. niem tin
+B. duong ham
+C. nhanh chong
+D. nguyen tu
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] base
+
+Question:
+What does "base" mean?
+
+A. co so
+B. qua mong
+C. can
+D. duoi ra
+
+Your answer: (Not answered)
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #030
+============================================================
+
+Date: 20/10/2026 20:39
+Total Questions: 4
+Correct: 0
+Wrong: 4
+Unanswered: 0
+Score: 0%
+Time Used: 03:42
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] advice
+
+Question:
+What does "advice" mean?
+
+A. keo dai
+B. tap album
+C. can nang
+D. loi khuyen
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] remind
+
+Question:
+What does "remind" mean?
+
+A. tap hop
+B. nhac nho
+C. cham rai
+D. nhan tao
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] blog
+
+Question:
+What does "blog" mean?
+
+A. mang vac
+B. khong noi nao
+C. trang blog
+D. con duong
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] bunch
+
+Question:
+What does "bunch" mean?
+
+A. lac
+B. luoi
+C. pho bien
+D. chum
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #031
+============================================================
+
+Date: 20/10/2026 21:38
+Total Questions: 2
+Correct: 0
+Wrong: 2
+Unanswered: 0
+Score: 0%
+Time Used: 00:28
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] wolf
+
+Question:
+What does "wolf" mean?
+
+A. sua chua
+B. con soi
+C. tan cong
 D. thong minh
 
-Your answer: C
+Your answer: A
 Correct answer: B
 
 ----------------------------------------------------------
 
-[8] beautiful
+[2] bunch
 
 Question:
-What does "beautiful" mean?
+What does "bunch" mean?
 
-A. co the
-B. dep
-C. thu vi
-D. nguy hiem
+A. chum
+B. vong tron
+C. khan gia
+D. nhay mua
 
-Your answer: C
-Correct answer: B
+Your answer: B
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #032
+============================================================
+
+Date: 20/10/2026 21:39
+Total Questions: 2
+Correct: 0
+Wrong: 2
+Unanswered: 0
+Score: 0%
+Time Used: 00:10
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] weather
+
+Question:
+What does "weather" mean?
+
+A. hoi han
+B. nghe si
+C. thoi tiet
+D. buoi sang
+
+Your answer: A
+Correct answer: C
 
 ----------------------------------------------------------
 
-[9] intelligent
+[2] dream
 
 Question:
-What does "intelligent" mean?
+What does "dream" mean?
 
-A. thong minh
-B. ???
-C. re
-D. thoai mai
+A. chao
+B. nha bep
+C. giac mo
+D. nem
+
+Your answer: B
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #033
+============================================================
+
+Date: 20/10/2026 21:44
+Total Questions: 3
+Correct: 1
+Wrong: 2
+Unanswered: 0
+Score: 33%
+Time Used: 00:22
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] rich
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] select
+
+Question:
+What does "select" mean?
+
+A. nay
+B. nang luc
+C. niem tin
+D. chon
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] flight
+
+Question:
+What does "flight" mean?
+
+A. chuyen bay
+B. ban nhac
+C. can nhac
+D. dong bang
 
 Your answer: C
 Correct answer: A
 
-----------------------------------------------------------
+---------------------- END OF QUIZ -----------------------
 
-[10] cheap
 
-Question:
-What does "cheap" mean?
+============================================================
+                    QUIZ #034
+============================================================
 
-A. re
-B. quan trong
-C. ???
-D. nguy hiem
+Date: 20/10/2026 21:45
+Total Questions: 5
+Correct: 3
+Wrong: 2
+Unanswered: 0
+Score: 60%
+Time Used: 00:16
 
-Your answer: C
+-------------------- CORRECT ANSWERS --------------------
+
+[1] own
+Your answer: A
 Correct answer: A
 
-----------------------------------------------------------
+[2] move
+Your answer: B
+Correct answer: B
 
-[13] comfortable
+[5] maybe
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[3] garden
 
 Question:
-What does "comfortable" mean?
+What does "garden" mean?
 
-A. khac nhau
-B. thoai mai
-C. van de
-D. re
+A. sac
+B. vuon
+C. loi
+D. cao su
 
 Your answer: C
 Correct answer: B
 
 ----------------------------------------------------------
 
-[14] friendly
+[4] door
 
 Question:
-What does "friendly" mean?
+What does "door" mean?
 
-A. than thien
-B. quan trong
-C. re
-D. thong minh
+A. cua
+B. nghe si
+C. sap xep
+D. trao doi
+
+Your answer: B
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #035
+============================================================
+
+Date: 20/10/2026 21:46
+Total Questions: 2
+Correct: 0
+Wrong: 2
+Unanswered: 0
+Score: 0%
+Time Used: 00:11
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] belt
+
+Question:
+What does "belt" mean?
+
+A. thue
+B. de nghi
+C. that lung
+D. khap noi
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] bother
+
+Question:
+What does "bother" mean?
+
+A. lam phien
+B. ngan hang
+C. goi mon
+D. duoi ra
+
+Your answer: B
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #036
+============================================================
+
+Date: 20/10/2026 21:51
+Total Questions: 3
+Correct: 0
+Wrong: 0
+Unanswered: 3
+Score: 0%
+Time Used: 00:11
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] tent
+
+Question:
+What does "tent" mean?
+
+A. thao luan
+B. co ban
+C. xin loi
+D. leu
+
+Your answer: (Not answered)
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] invent
+
+Question:
+What does "invent" mean?
+
+A. con gau
+B. no
+C. khoa
+D. phat minh
+
+Your answer: (Not answered)
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] hard
+
+Question:
+What does "hard" mean?
+
+A. biet
+B. cung
+C. tuong
+D. du
+
+Your answer: (Not answered)
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #037
+============================================================
+
+Date: 20/10/2026 21:52
+Total Questions: 5
+Correct: 2
+Wrong: 3
+Unanswered: 0
+Score: 40%
+Time Used: 00:32
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] seat
+Your answer: B
+Correct answer: B
+
+[4] begin
+Your answer: C
+Correct answer: C
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] mirror
+
+Question:
+What does "mirror" mean?
+
+A. nha bep
+B. song
+C. thang
+D. guong
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] brief
+
+Question:
+What does "brief" mean?
+
+A. vo
+B. con cho
+C. giay
+D. ngan gon
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] spread
+
+Question:
+What does "spread" mean?
+
+A. bo nao
+B. may moc
+C. lan rong
+D. mua
+
+Your answer: D
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #038
+============================================================
+
+Date: 20/10/2026 21:54
+Total Questions: 2
+Correct: 0
+Wrong: 2
+Unanswered: 0
+Score: 0%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] affect
+
+Question:
+What does "affect" mean?
+
+A. ket qua
+B. lua chon
+C. anh huong
+D. nguoi
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] party
+
+Question:
+What does "party" mean?
+
+A. buoi tiec
+B. bao
+C. hua
+D. thay mat
 
 Your answer: C
 Correct answer: A
 
-----------------------------------------------------------
+---------------------- END OF QUIZ -----------------------
 
-[15] interesting
+
+============================================================
+                    QUIZ #039
+============================================================
+
+Date: 20/10/2026 21:55
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:12
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] note
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] list
 
 Question:
-What does "interesting" mean?
+What does "list" mean?
 
-A. re
-B. thu vi
-C. khac nhau
-D. dat
+A. dinh
+B. danh sach
+C. thay the
+D. goi y
 
 Your answer: C
 Correct answer: B
 
 ----------------------------------------------------------
 
-[16] successful
+[3] awesome
 
 Question:
-What does "successful" mean?
+What does "awesome" mean?
 
-A. thong minh
-B. quan trong
-C. kho
-D. thanh cong
+A. tuyet voi
+B. du
+C. sua
+D. yeu cau
+
+Your answer: B
+Correct answer: A
+
+----------------------------------------------------------
+
+[4] fight
+
+Question:
+What does "fight" mean?
+
+A. chuoi
+B. danh nhau
+C. mu
+D. ton trong
+
+Your answer: D
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] glass
+
+Question:
+What does "glass" mean?
+
+A. ly
+B. chuong
+C. da
+D. chan
+
+Your answer: D
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #040
+============================================================
+
+Date: 20/10/2026 22:07
+Total Questions: 3
+Correct: 0
+Wrong: 3
+Unanswered: 0
+Score: 0%
+Time Used: 00:27
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] metal
+
+Question:
+What does "metal" mean?
+
+A. som
+B. bat c·ª© ai
+C. kim loai
+D. vuon thu
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] business
+
+Question:
+What does "business" mean?
+
+A. dinh kem
+B. o lai
+C. can
+D. kinh doanh
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] raise
+
+Question:
+What does "raise" mean?
+
+A. ke hoach
+B. nang
+C. chan
+D. suc manh
+
+Your answer: D
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #041
+============================================================
+
+Date: 20/10/2026 22:07
+Total Questions: 5
+Correct: 2
+Wrong: 3
+Unanswered: 0
+Score: 40%
+Time Used: 00:05
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] worry
+Your answer: A
+Correct answer: A
+
+[5] warn
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] south
+
+Question:
+What does "south" mean?
+
+A. choi
+B. co the
+C. phia nam
+D. nen tang
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] help
+
+Question:
+What does "help" mean?
+
+A. rui ro
+B. giup do
+C. hom nay
+D. dua tre
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] adjust
+
+Question:
+What does "adjust" mean?
+
+A. dieu chinh
+B. khoa
+C. gach
+D. thoi gian
+
+Your answer: D
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #042
+============================================================
+
+Date: 20/10/2026 22:08
+Total Questions: 4
+Correct: 1
+Wrong: 3
+Unanswered: 0
+Score: 25%
+Time Used: 00:09
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] nurse
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] brilliant
+
+Question:
+What does "brilliant" mean?
+
+A. roi
+B. trung phat
+C. roi di
+D. xuat chung
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] prove
+
+Question:
+What does "prove" mean?
+
+A. may chu
+B. chung minh
+C. dinh kem
+D. vo
+
+Your answer: C
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] driver
+
+Question:
+What does "driver" mean?
+
+A. chuoi
+B. tai xe
+C. lay
+D. ghe dai
+
+Your answer: D
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #043
+============================================================
+
+Date: 20/10/2026 22:17
+Total Questions: 4
+Correct: 2
+Wrong: 2
+Unanswered: 0
+Score: 50%
+Time Used: 00:29
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] appeal
+Your answer: C
+Correct answer: C
+
+[3] behind
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] alone
+
+Question:
+What does "alone" mean?
+
+A. bi mat
+B. mai nha
+C. rang
+D. mot minh
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] bridge
+
+Question:
+What does "bridge" mean?
+
+A. mui ten
+B. cay cau
+C. bang
+D. thap
+
+Your answer: D
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #044
+============================================================
+
+Date: 20/10/2026 22:18
+Total Questions: 3
+Correct: 1
+Wrong: 2
+Unanswered: 0
+Score: 33%
+Time Used: 00:37
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] bucket
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] oven
+
+Question:
+What does "oven" mean?
+
+A. nang dong
+B. trang trong
+C. am
+D. lo nuong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] estimate
+
+Question:
+What does "estimate" mean?
+
+A. uoc tinh
+B. su kien
+C. binh tinh
+D. rao can
+
+Your answer: D
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #045
+============================================================
+
+Date: 20/10/2026 22:24
+Total Questions: 3
+Correct: 0
+Wrong: 3
+Unanswered: 0
+Score: 0%
+Time Used: 04:30
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] office
+
+Question:
+What does "office" mean?
+
+A. min
+B. chuot
+C. van phong
+D. chuong trinh
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] rain
+
+Question:
+What does "rain" mean?
+
+A. anh huong
+B. gang tay
+C. thit bo
+D. mua
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] modern
+
+Question:
+What does "modern" mean?
+
+A. hien dai
+B. mo
+C. no
+D. keo
+
+Your answer: D
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #046
+============================================================
+
+Date: 20/10/2026 22:37
+Total Questions: 5
+Correct: 3
+Wrong: 2
+Unanswered: 0
+Score: 60%
+Time Used: 00:12
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] earth
+Your answer: B
+Correct answer: B
+
+[4] cute
+Your answer: A
+Correct answer: A
+
+[5] dictionary
+Your answer: C
+Correct answer: C
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] desert
+
+Question:
+What does "desert" mean?
+
+A. huy hieu
+B. sa mac
+C. khap noi
+D. khang dinh
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] worry
+
+Question:
+What does "worry" mean?
+
+A. lo lang
+B. dia chi
+C. gia
+D. sai
+
+Your answer: C
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #047
+============================================================
+
+Date: 20/10/2026 22:38
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:05
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] calendar
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] budget
+
+Question:
+What does "budget" mean?
+
+A. bi mat
+B. duoi
+C. ngan sach
+D. nau an
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] assess
+
+Question:
+What does "assess" mean?
+
+A. khang dinh
+B. quyet dinh
+C. o lai
+D. danh gia
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] wall
+
+Question:
+What does "wall" mean?
+
+A. thit bo
+B. ky uc
+C. hy vong
+D. tuong
 
 Your answer: C
 Correct answer: D
+
+----------------------------------------------------------
+
+[5] account
+
+Question:
+What does "account" mean?
+
+A. quan tri vien
+B. tan chay
+C. chim
+D. tai khoan
+
+Your answer: C
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #048
+============================================================
+
+Date: 20/10/2026 22:39
+Total Questions: 5
+Correct: 2
+Wrong: 3
+Unanswered: 0
+Score: 40%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] ability
+Your answer: A
+Correct answer: A
+
+[3] bored
+Your answer: C
+Correct answer: C
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] foot
+
+Question:
+What does "foot" mean?
+
+A. tuyet voi
+B. con duong
+C. ban chan
+D. chuong trinh
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] express
+
+Question:
+What does "express" mean?
+
+A. quan ly
+B. bac
+C. ghe dai
+D. bieu dat
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] variable
+
+Question:
+What does "variable" mean?
+
+A. chao
+B. bau troi
+C. bai tap
+D. bien so
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #049
+============================================================
+
+Date: 20/10/2026 22:39
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] park
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] taxi
+
+Question:
+What does "taxi" mean?
+
+A. nhan
+B. xe taxi
+C. du tien
+D. doi
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] team
+
+Question:
+What does "team" mean?
+
+A. dong
+B. xung quanh
+C. doi
+D. tu hao
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[4] hero
+
+Question:
+What does "hero" mean?
+
+A. hoc tap
+B. ho chieu
+C. anh hung
+D. cang
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[5] melt
+
+Question:
+What does "melt" mean?
+
+A. ben trong
+B. tan chay
+C. giau
+D. bui cay
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #050
+============================================================
+
+Date: 20/10/2026 22:40
+Total Questions: 3
+Correct: 0
+Wrong: 3
+Unanswered: 0
+Score: 0%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] letter
+
+Question:
+What does "letter" mean?
+
+A. kiem tra
+B. buc thu
+C. tu dien
+D. kho rao
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] adopt
+
+Question:
+What does "adopt" mean?
+
+A. banh xe
+B. nhan nuoi
+C. bua an
+D. tot hon
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] little
+
+Question:
+What does "little" mean?
+
+A. so huu
+B. gui
+C. nho
+D. ket thuc
+
+Your answer: A
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #051
+============================================================
+
+Date: 20/10/2026 22:46
+Total Questions: 3
+Correct: 1
+Wrong: 2
+Unanswered: 0
+Score: 33%
+Time Used: 00:02
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] tree
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] worker
+
+Question:
+What does "worker" mean?
+
+A. dem
+B. cong nhan
+C. suc manh
+D. su kien
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] bush
+
+Question:
+What does "bush" mean?
+
+A. thay the
+B. phat minh
+C. bao mat
+D. bui cay
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #052
+============================================================
+
+Date: 20/10/2026 22:46
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] corner
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] beat
+
+Question:
+What does "beat" mean?
+
+A. sep
+B. chat len
+C. danh
+D. cap do
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] cousin
+
+Question:
+What does "cousin" mean?
+
+A. xung quanh
+B. anh chi em ho
+C. dep
+D. bat dau
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] animal
+
+Question:
+What does "animal" mean?
+
+A. xe taxi
+B. van phong
+C. mac ca
+D. dong vat
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[5] girl
+
+Question:
+What does "girl" mean?
+
+A. nhan dien
+B. thay doi
+C. co gai
+D. hanh lang
+
+Your answer: A
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #053
+============================================================
+
+Date: 20/10/2026 22:53
+Total Questions: 3
+Correct: 0
+Wrong: 3
+Unanswered: 0
+Score: 0%
+Time Used: 00:02
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] foolish
+
+Question:
+What does "foolish" mean?
+
+A. anh dai dien
+B. do choi
+C. ngu ngoc
+D. pha tron
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[2] page
+
+Question:
+What does "page" mean?
+
+A. go
+B. trang
+C. khach san
+D. cui chao
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[3] museum
+
+Question:
+What does "museum" mean?
+
+A. nhan ra
+B. bao tang
+C. nem
+D. cai giuong
+
+Your answer: A
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #054
+============================================================
+
+Date: 20/10/2026 22:54
+Total Questions: 5
+Correct: 1
+Wrong: 4
+Unanswered: 0
+Score: 20%
+Time Used: 00:03
+
+-------------------- CORRECT ANSWERS --------------------
+
+[5] report
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] balcony
+
+Question:
+What does "balcony" mean?
+
+A. can dam
+B. dat
+C. co so du lieu
+D. ban cong
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] decorate
+
+Question:
+What does "decorate" mean?
+
+A. tac nhan
+B. nu hoang
+C. ap dung
+D. trang tri
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[3] coat
+
+Question:
+What does "coat" mean?
+
+A. giao thong
+B. giay phep
+C. giac mo
+D. ao khoac
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] equal
+
+Question:
+What does "equal" mean?
+
+A. an
+B. da
+C. chum tia
+D. bang nhau
+
+Your answer: A
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #055
+============================================================
+
+Date: 20/10/2026 23:04
+Total Questions: 4
+Correct: 2
+Wrong: 2
+Unanswered: 0
+Score: 50%
+Time Used: 00:05
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] singer
+Your answer: A
+Correct answer: A
+
+[3] discuss
+Your answer: C
+Correct answer: C
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] lesson
+
+Question:
+What does "lesson" mean?
+
+A. nui
+B. qua mong
+C. cau xin
+D. bai hoc
+
+Your answer: B
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] rain
+
+Question:
+What does "rain" mean?
+
+A. mua
+B. dan so
+C. am thanh
+D. dung
+
+Your answer: D
+Correct answer: A
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #056
+============================================================
+
+Date: 20/10/2026 23:04
+Total Questions: 4
+Correct: 1
+Wrong: 3
+Unanswered: 0
+Score: 25%
+Time Used: 00:04
+
+-------------------- CORRECT ANSWERS --------------------
+
+[1] bowl
+Your answer: A
+Correct answer: A
+
+--------------------- WRONG ANSWERS ----------------------
+
+[2] alone
+
+Question:
+What does "alone" mean?
+
+A. mot minh
+B. that bai
+C. noi dau
+D. con duong
+
+Your answer: B
+Correct answer: A
+
+----------------------------------------------------------
+
+[3] happy
+
+Question:
+What does "happy" mean?
+
+A. vui ve
+B. chuong trinh
+C. banh ngot
+D. san bay
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[4] computer
+
+Question:
+What does "computer" mean?
+
+A. het
+B. di theo
+C. may tinh
+D. cong viec
+
+Your answer: D
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #057
+============================================================
+
+Date: 20/10/2026 23:14
+Total Questions: 4
+Correct: 0
+Wrong: 0
+Unanswered: 4
+Score: 0%
+Time Used: 00:13
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] country
+
+Question:
+What does "country" mean?
+
+A. gap
+B. dat nuoc
+C. bong da
+D. vang
+
+Your answer: (Not answered)
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] possess
+
+Question:
+What does "possess" mean?
+
+A. hang xom
+B. tim kiem
+C. so huu
+D. nau an
+
+Your answer: (Not answered)
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] tomorrow
+
+Question:
+What does "tomorrow" mean?
+
+A. day
+B. mua
+C. o giua
+D. ngay mai
+
+Your answer: (Not answered)
+Correct answer: D
+
+----------------------------------------------------------
+
+[4] modern
+
+Question:
+What does "modern" mean?
+
+A. cong thuc nau an
+B. nghi ngo
+C. vui ve
+D. hien dai
+
+Your answer: (Not answered)
+Correct answer: D
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #058
+============================================================
+
+Date: 20/10/2026 23:16
+Total Questions: 4
+Correct: 0
+Wrong: 4
+Unanswered: 0
+Score: 0%
+Time Used: 00:06
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] alpha
+
+Question:
+What does "alpha" mean?
+
+A. hep
+B. alpha
+C. tam
+D. trai tim
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[2] result
+
+Question:
+What does "result" mean?
+
+A. rem cua
+B. tu hao
+C. ket qua
+D. truoc
+
+Your answer: B
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] lucky
+
+Question:
+What does "lucky" mean?
+
+A. may man
+B. bong da
+C. nhanh
+D. mat
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[4] maybe
+
+Question:
+What does "maybe" mean?
+
+A. cu
+B. cho
+C. co le
+D. moi quan he
+
+Your answer: D
+Correct answer: C
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #059
+============================================================
+
+Date: 20/10/2026 23:17
+Total Questions: 4
+Correct: 1
+Wrong: 3
+Unanswered: 0
+Score: 25%
+Time Used: 00:05
+
+-------------------- CORRECT ANSWERS --------------------
+
+[2] bright
+Your answer: B
+Correct answer: B
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] somewhere
+
+Question:
+What does "somewhere" mean?
+
+A. tham vong
+B. cai coc
+C. o dau do
+D. cai chai
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] throw
+
+Question:
+What does "throw" mean?
+
+A. nem
+B. phuc vu
+C. hu hong
+D. chin
+
+Your answer: C
+Correct answer: A
+
+----------------------------------------------------------
+
+[4] loud
+
+Question:
+What does "loud" mean?
+
+A. nuoc hoa
+B. om
+C. du an
+D. con soi
+
+Your answer: D
+Correct answer: B
+
+---------------------- END OF QUIZ -----------------------
+
+
+============================================================
+                    QUIZ #060
+============================================================
+
+Date: 22/10/2026 08:20
+Total Questions: 10
+Correct: 0
+Wrong: 10
+Unanswered: 0
+Score: 0%
+Time Used: 00:06
+
+-------------------- CORRECT ANSWERS --------------------
+
+No correct answers.
+
+--------------------- WRONG ANSWERS ----------------------
+
+[1] chest
+
+Question:
+What does "chest" mean?
+
+A. nhanh
+B. song sot
+C. ti vi
+D. nguc
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[2] beyond
+
+Question:
+What does "beyond" mean?
+
+A. cai giuong
+B. bua trua
+C. vuot qua
+D. phan cung
+
+Your answer: A
+Correct answer: C
+
+----------------------------------------------------------
+
+[3] hungry
+
+Question:
+What does "hungry" mean?
+
+A. chat len
+B. doi
+C. lang phi
+D. chinh
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[4] soldier
+
+Question:
+What does "soldier" mean?
+
+A. o lai
+B. linh
+C. bat dau
+D. luoi
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[5] pepper
+
+Question:
+What does "pepper" mean?
+
+A. nhanh
+B. lay
+C. thoi gian
+D. tieu
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[6] return
+
+Question:
+What does "return" mean?
+
+A. tung
+B. tra lai
+C. tre
+D. xa hoi
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[7] tall
+
+Question:
+What does "tall" mean?
+
+A. cao su
+B. cao
+C. tra loi
+D. cua so
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[8] talk
+
+Question:
+What does "talk" mean?
+
+A. phong vien
+B. toi
+C. hien nha
+D. noi chuyen
+
+Your answer: A
+Correct answer: D
+
+----------------------------------------------------------
+
+[9] weak
+
+Question:
+What does "weak" mean?
+
+A. chu y
+B. yeu
+C. mau xanh
+D. chin
+
+Your answer: A
+Correct answer: B
+
+----------------------------------------------------------
+
+[10] away
+
+Question:
+What does "away" mean?
+
+A. thuong nien
+B. cach xa
+C. ngoi
+D. son
+
+Your answer: A
+Correct answer: B
 
 ---------------------- END OF QUIZ -----------------------
 
